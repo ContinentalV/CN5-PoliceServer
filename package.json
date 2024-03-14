@@ -9,6 +9,7 @@
     "init:db:create": "node init/init-db.ts",
     "init:db:migrate": "sequelize db:migrate",
     "init:db:seedall": "npx sequelize-cli db:seed:all",
+    "stop":"taskkill /im node.exe /f",
 
     "start:prod": "node build/server.js",
     "dev": "nodemon src/app.ts",

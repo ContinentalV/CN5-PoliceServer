@@ -38,3 +38,4 @@ Vérification table:: userrole
 Vérification table:: users table(s) dans la base de données.
 [14/03/2024 20:20:22] DB: Vérification déroulé avec succès ✅✅
 [14/03/2024 21:46:52] INFO: API Start on 8000
+[14/03/2024 23:17:13] INFO: API Start on 8000
