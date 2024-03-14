@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start:dev": "ts-node-dev --respawn --transpile-only src/server.ts",
-    "init:app": "node init/init-db.ts && sequelize db:migrate && npx sequelize-cli db:seed:all",
+    "init:full-app": "node init/init-db.ts && sequelize db:migrate && npx sequelize-cli db:seed:all",
+    "init:db:create": "node init/init-db.ts",
+    "init:db:migrate": "sequelize db:migrate",
+    "init:db:seedall": "npx sequelize-cli db:seed:all",
+
     "start:prod": "node build/server.js",
     "dev": "nodemon src/app.ts",
     "build": "tsc"
