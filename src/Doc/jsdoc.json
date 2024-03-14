@@ -1,0 +1,24 @@
+{
+  "plugins": [
+    "tsd-jsdoc"
+  ],
+  "source": {
+    "include": [
+      "./src"
+    ],
+    // Spécifiez le dossier source, typiquement './src'
+    "exclude": [
+      "node_modules"
+    ],
+    "includePattern": ".+\\.ts(x)?$"
+    // Pour TypeScript et potentiellement TypeScript React
+  },
+  "opts": {
+    "encoding": "utf8",
+    "destination": "./docs",
+    // Changez ceci pour le dossier où vous voulez que la documentation soit générée
+    "recurse": true,
+    "verbose": true,
+    "template": "node_modules/tsd-jsdoc/dist"
+  }
+}
