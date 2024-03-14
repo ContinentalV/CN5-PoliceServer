@@ -4,7 +4,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const app_1 = __importDefault(require("./app"));
-const dbConfig_1 = require("./config/dbConfig");
 require("dotenv/config");
 const functions_1 = require("./utils/functions");
 // Convertir explicitement PORT en number si nécessaire
@@ -12,7 +11,7 @@ const PORT = parseInt(process.env.PORT || '8005', 10);
 app_1.default.listen(PORT, async () => {
     try {
         (0, functions_1.logInfo)(`API Start on ${PORT}`);
-        await (0, dbConfig_1.checkTables)();
+        //await checkTables();
         // setInterval(monitorPerformance, 10000);
         //await monitorPerformance();
     }
