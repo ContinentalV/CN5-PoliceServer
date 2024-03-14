@@ -10,7 +10,7 @@
     "init:db:migrate": "sequelize db:migrate",
     "init:db:seedall": "npx sequelize-cli db:seed:all",
 
-    "start:prod": "node build/server.js",
+    "start:prod": "nodemon build/server.js",
     "dev": "nodemon src/app.ts",
     "build": "tsc"
   },
