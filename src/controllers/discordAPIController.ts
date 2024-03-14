@@ -4,7 +4,7 @@ import axios from 'axios';
 import {replaceNumberInAgentName} from "../utils/utilFn";
 import memberService from "../services/memberService";
 
-const botToken = 'MTE5MjIyMDczMjI3NzY3NDEzNA.GVis1Y.Ajq59Hs02KiRvfHOL54KjLGgn5ZdJ4k756qsLw'; // Remplacez YOUR_BOT_TOKEN par le token de votre bot Discord
+const botToken = process.env.BOT_TOKEN; // Remplacez YOUR_BOT_TOKEN par le token de votre bot Discord
 const baseUrl = 'https://discord.com/api/';
 
 async function callDiscordAPI(endpoint: string, method: string, body?: any) {
