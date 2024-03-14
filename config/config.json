@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "policeneo",
-    "password": "azerty1234&&",
+    "password": "azerty1234&&@&",
     "database": "dev_police_manager",
     "host": "127.0.0.1",
     "dialect": "mysql"
@@ -15,7 +15,7 @@
   },
   "production": {
     "username": "policeneo",
-    "password": "azerty1234&&",
+    "password": "azerty1234&&@&",
     "database": "prod_police_manager",
     "host": "127.0.0.1",
     "dialect": "mysql"
