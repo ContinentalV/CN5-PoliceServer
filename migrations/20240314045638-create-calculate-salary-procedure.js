@@ -10,7 +10,7 @@ BEGIN
 
     SELECT ur.roleId INTO v_roleId FROM Userrole ur WHERE ur.userId = p_discordId LIMIT 1;
     SELECT r.salary INTO v_baseSalary FROM Roles r WHERE r.idRole = v_roleId;
-    SELECT IFNULL(MAX(s.TOTAL), 0) INTO v_totalServiceMinutes FROM Services s WHERE s.discordAgentId = p_discordId;
+    SELECT IFNULL(MAX(s.TOTAL), 0) INTO v_totalServiceMinutes FROM services s WHERE s.discordAgentId = p_discordId;
 
     IF v_totalServiceMinutes < 690 THEN
         SET p_totalSalary = 0;

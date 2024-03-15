@@ -14,16 +14,16 @@ const getUserProfile = async (discordId: string): Promise<IProfile | null> => {
                Users.dateJoin,
                Users.matricule,
                Users.idServeur,
-               Services.PDS                  as dernierPDS,
-               Services.FDS                  as dernierFDS,
-               Services.TEMPS_SERVICE        as serviceTime,
-               Services.serviceIsOn          as inService,
-               Services.TOTAL                as tempsTotalService,
+               services.PDS                  as dernierPDS,
+               services.FDS                  as dernierFDS,
+               services.TEMPS_SERVICE        as serviceTime,
+               services.serviceIsOn          as inService,
+               services.TOTAL                as tempsTotalService,
                GROUP_CONCAT(ListRole.roleId) as roleId,   -- Modifier : Concaténation des identifiants de rôle
                GROUP_CONCAT(ListRole.name)   as roleName, -- Modifier : Concaténation des noms de rôle
                GROUP_CONCAT(ListRole.color)  as roleColor -- Modifier : Concaténation des couleurs de rôle
         FROM Users
-                 LEFT JOIN Services ON Users.discordId = Services.discordAgentId
+                 LEFT JOIN services ON Users.discordId = services.discordAgentId
                  LEFT JOIN AgentRole ON Users.discordId = AgentRole.agentId
                  LEFT JOIN ListRole ON AgentRole.roleId = ListRole.roleId
         WHERE Users.discordId = ?
