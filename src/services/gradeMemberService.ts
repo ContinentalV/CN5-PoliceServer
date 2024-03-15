@@ -9,13 +9,13 @@ const addGradeMember = async (agentId: string, roleId: string,) => {
         let query;
 
         query = `SELECT *
-                 FROM police.AgentRole
+                 FROM AgentRole
                  WHERE agentId = ?
                    AND roleId = ?`
         const [rows] = await connection.query(query, [agentId, roleId]);
         console.log(rows.length)
         if (rows.length === 0) {
-            query = `INSERT INTO police.AgentRole (agentId, roleId)
+            query = `INSERT INTO AgentRole (agentId, roleId)
                      VALUES (?, ?)`
 
             await connection.query(query, [agentId, roleId])

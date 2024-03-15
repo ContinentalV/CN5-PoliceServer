@@ -13,6 +13,7 @@ router.get('/:me', async (req: Request, res: Response, next: NextFunction) => {
         const targetId = req.params.me
         const profileInfo = await profileService.getUserProfile(targetId)
         const salary = await profileService.getSalaryForUser(targetId)
+        console.log(salary)
 
         if (!targetId || !profileInfo) throw new ModerateError('Profile inexistant dans la base de donné')
 
