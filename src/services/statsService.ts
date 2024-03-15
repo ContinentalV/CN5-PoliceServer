@@ -48,14 +48,14 @@ const getAllDataProfile = async (metierCode: string): Promise<any> => {
                Users.codeMetier,
                Users.dateJoin,
                Users.matricule,
-               Services.PDS         as dernierPDS,
-               Services.serviceIsOn as inService,
-               Services.TOTAL       as tempsTotalService,
+               services.PDS         as dernierPDS,
+               services.serviceIsOn as inService,
+               services.TOTAL       as tempsTotalService,
                ListRole.roleId      as roleId,
                ListRole.name        as roleName,
                ListRole.color       as roleColor
         FROM Users
-                 LEFT JOIN Services ON Users.discordId = Services.discordAgentId
+                 LEFT JOIN services ON Users.discordId = services.discordAgentId
                  LEFT JOIN AgentRole ON Users.discordId = AgentRole.agentId
                  LEFT JOIN ListRole ON AgentRole.roleId = ListRole.roleId
         WHERE Users.codeMetier = ?
