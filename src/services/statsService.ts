@@ -49,7 +49,7 @@ const getAllDataProfile = async (metierCode: string): Promise<any> => {
                Users.dateJoin,
                Users.matricule,
                Services.PDS         as dernierPDS,
-               services.serviceIsOn as inService,
+               Services.serviceIsOn as inService,
                Services.TOTAL       as tempsTotalService,
                ListRole.roleId      as roleId,
                ListRole.name        as roleName,
