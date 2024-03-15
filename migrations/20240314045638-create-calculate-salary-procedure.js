@@ -8,7 +8,7 @@ BEGIN
     DECLARE v_totalServiceMinutes INT DEFAULT 0;
     DECLARE v_roleId VARCHAR(255);
 
-    SELECT ur.roleId INTO v_roleId FROM UserRole ur WHERE ur.userId = p_discordId LIMIT 1;
+    SELECT ur.roleId INTO v_roleId FROM Userrole ur WHERE ur.userId = p_discordId LIMIT 1;
     SELECT r.salary INTO v_baseSalary FROM Roles r WHERE r.idRole = v_roleId;
     SELECT IFNULL(MAX(s.TOTAL), 0) INTO v_totalServiceMinutes FROM Services s WHERE s.discordAgentId = p_discordId;
 
