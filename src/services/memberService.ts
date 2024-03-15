@@ -64,13 +64,13 @@ const deleteMember = async (discordId: string): Promise<void> => {
                                 FROM services
                                 WHERE discordAgentId = ?`, [discordId])
         await connection.query(`DELETE
-                                FROM userrole
+                                FROM Userrole
                                 WHERE userId = ?`, [discordId])
         await connection.query(`DELETE
                                 FROM AgentRole
                                 WHERE agentId = ?`, [discordId])
         await connection.query(`DELETE
-                                FROM users
+                                FROM Users
                                 WHERE discordId = ?`, [discordId])
 
         await connection.commit()

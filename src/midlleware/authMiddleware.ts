@@ -35,7 +35,7 @@ export const authenticate = (req: Request, res: Response, next: NextFunction) =>
 
 
     if (req.headers['authorization']?.startsWith("Bearer ")) {
-        console.log(req.headers['authorization'])
+
         authenticateBotToken(req, res, next);
     } else {
 
