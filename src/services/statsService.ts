@@ -64,7 +64,8 @@ const getAllDataProfile = async (metierCode: string): Promise<any> => {
         const [rows] = await connection.query(query, [metierCode]);
         return rows; // Assure le retour des données ou un tableau vide
     } catch (e) {
-        throw e
+        console.error('Error fetching user salary:', e);
+        throw e;
     } finally {
         connection.release()
     }
