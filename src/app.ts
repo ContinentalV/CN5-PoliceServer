@@ -21,7 +21,7 @@ import gradesMemberRoutes from "./routes/gradesMemberRoutes";
 
 dotenv.config()
 
-
+//TODO Deplacer la route avec son propre controlleur etc...
 //TODO FIXE CRITICAL DONT SHOW IN DASH API WEBHOOK
 const messageId = "1198267464153301043"
 const app = express();
@@ -53,7 +53,7 @@ app.use("/:serveurId", roleServeurController)
 app.use("/roles/members", gradesMemberRoutes)
 
 
-/*
+
 app.post("/health/bot", async (req, res, next) => {
     const dataHealth = req.body
     lastUpdate = Date.now()
@@ -167,5 +167,3 @@ function createCommandFields(guildCommandStats: GuildCommandStats): { name: stri
         };
     });
 }
-
- */
