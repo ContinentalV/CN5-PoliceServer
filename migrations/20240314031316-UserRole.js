@@ -2,7 +2,7 @@
 
 module.exports = {
     async up(queryInterface, Sequelize) {
-        await queryInterface.createTable('UserRole', {
+        await queryInterface.createTable('Userrole', {
             userId: {
                 type: Sequelize.STRING,
                 references: {model: 'Users', key: 'discordId'}
@@ -15,6 +15,6 @@ module.exports = {
     },
 
     async down(queryInterface, Sequelize) {
-        await queryInterface.dropTable('UserRole');
+        await queryInterface.dropTable('Userrole');
     }
 };
