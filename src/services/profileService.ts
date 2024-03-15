@@ -17,7 +17,7 @@ const getUserProfile = async (discordId: string): Promise<IProfile | null> => {
                Services.PDS                  as dernierPDS,
                Services.FDS                  as dernierFDS,
                Services.TEMPS_SERVICE        as serviceTime,
-               services.serviceIsOn          as inService,
+               Services.serviceIsOn          as inService,
                Services.TOTAL                as tempsTotalService,
                GROUP_CONCAT(ListRole.roleId) as roleId,   -- Modifier : Concaténation des identifiants de rôle
                GROUP_CONCAT(ListRole.name)   as roleName, -- Modifier : Concaténation des noms de rôle
