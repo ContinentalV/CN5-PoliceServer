@@ -54,7 +54,7 @@ const removeGradeMember = async (agentId: string, roleId: string) => {
 const webAccessAdd = async (discordId: string) => {
     const connection: PoolConnection = await pool.getConnection();
     try {
-        const query = `UPDATE users
+        const query = `UPDATE Users
                        SET etatMajor = ?
                        WHERE discordId = ?
         `
