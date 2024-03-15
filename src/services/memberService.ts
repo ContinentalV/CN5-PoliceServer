@@ -110,7 +110,7 @@ const createGradeEntryForMember = async (agentId: string, grades: []): Promise<v
 
     try {
         for (const grade of grades) {
-            const query = `INSERT INTO agentrole (agentId, roleId)
+            const query = `INSERT INTO AgentRole (agentId, roleId)
                            VALUES (?, ?)`;
             await connection.query(query, [agentId, grade]);
         }
@@ -182,7 +182,7 @@ const updateMemberMatricule = async (discordId: string, newMatricule: number, co
 const createServiceEntryForMember = async (discordAgentId: string): Promise<void> => {
     const connection = await pool.getConnection();
     try {
-        const query = `INSERT INTO Services (discordAgentId)
+        const query = `INSERT INTO services (discordAgentId)
                        VALUES (?)`;
         await connection.query(query, [discordAgentId]);
     } catch (error) {
@@ -234,7 +234,7 @@ const updateMemberRole = async (discordId: string, newRoleId: string): Promise<v
     const connection = await pool.getConnection()
     try {
 
-        await connection.query(`UPDATE userrole
+        await connection.query(`UPDATE Userrole
                                 SET roleId = ?
                                 WHERE userId = ?`, [newRoleId, discordId]
         )

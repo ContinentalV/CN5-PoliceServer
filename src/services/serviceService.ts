@@ -7,7 +7,7 @@ const isUserInService = async (discordAgentId: string): Promise<IService | null>
     const connection: PoolConnection = await pool.getConnection()
 
     const query = `SELECT *
-                   FROM Services
+                   FROM services
                    WHERE discordAgentId = ?
                      AND serviceIsOn = true`
 
