@@ -67,7 +67,7 @@ const deleteMember = async (discordId: string): Promise<void> => {
                                 FROM userrole
                                 WHERE userId = ?`, [discordId])
         await connection.query(`DELETE
-                                FROM agentrole
+                                FROM AgentRole
                                 WHERE agentId = ?`, [discordId])
         await connection.query(`DELETE
                                 FROM users

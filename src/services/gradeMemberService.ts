@@ -9,13 +9,13 @@ const addGradeMember = async (agentId: string, roleId: string,) => {
         let query;
 
         query = `SELECT *
-                 FROM police.agentrole
+                 FROM police.AgentRole
                  WHERE agentId = ?
                    AND roleId = ?`
         const [rows] = await connection.query(query, [agentId, roleId]);
         console.log(rows.length)
         if (rows.length === 0) {
-            query = `INSERT INTO police.agentrole (agentId, roleId)
+            query = `INSERT INTO police.AgentRole (agentId, roleId)
                      VALUES (?, ?)`
 
             await connection.query(query, [agentId, roleId])
@@ -37,7 +37,7 @@ const removeGradeMember = async (agentId: string, roleId: string) => {
     try {
         let query;
         query = `DELETE
-                 FROM agentrole
+                 FROM AgentRole
                  WHERE agentId = ?
                    AND roleId = ?`;
 
@@ -72,7 +72,7 @@ const webAccessAdd = async (discordId: string) => {
 const webAccessRemove = async (discordId: string) => {
     const connection: PoolConnection = await pool.getConnection();
     try {
-        const query = `UPDATE users
+        const query = `UPDATE Users
                        SET etatMajor = ?
                        WHERE discordId = ?
         `
