@@ -75,7 +75,7 @@ const deleteMember = async (discordId: string): Promise<void> => {
 
         await connection.commit()
     } catch (e: any) {
-        console.log(e)
+        console.log(e);
         await connection.rollback();
         throw e
 
