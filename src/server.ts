@@ -15,6 +15,7 @@ app.listen(PORT, async () => {
 
         logInfo(`API Start on ${PORT}`);
         console.log("all good test encore")
+        console.log("ajout installation bcrypt")
     } catch (err) {
         if (err instanceof Error) {
             logError(err.message);

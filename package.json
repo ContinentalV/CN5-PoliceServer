@@ -9,8 +9,7 @@
     "init:db:create": "node init/init-db.ts",
     "init:db:migrate": "sequelize db:migrate",
     "init:db:seedall": "npx sequelize-cli db:seed:all",
-    "stop":"taskkill /im node.exe /f",
-
+    "stop": "taskkill /im node.exe /f",
     "start:prod": "node build/server.js",
     "dev": "nodemon src/app.ts",
     "build": "tsc"
@@ -38,6 +37,7 @@
     "connect-timeout": "^1.9.0",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
+    "crypto": "^1.0.1",
     "dayjs": "^1.11.10",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
