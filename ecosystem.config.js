@@ -19,8 +19,6 @@ module.exports = {
         env_production: {
             "NODE_ENV": "production",
             // Définissez ici d'autres variables d'environnement pour le mode production
-        },
-        exec_mode: 'fork', // Exécution du script en mode fork (processus séparé)
-        script: 'build-script.js' // Chemin vers le script de construction dédié
+        }
     }]
 };
