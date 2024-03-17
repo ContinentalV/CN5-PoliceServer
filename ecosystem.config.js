@@ -20,6 +20,7 @@ module.exports = {
             "NODE_ENV": "production",
             // Définissez ici d'autres variables d'environnement pour le mode production
         },
-        post_update: ["npm install && npm run build"] // Chemins absolus vers les commandes d'installation et de construction
+        exec_mode: 'fork', // Exécution du script en mode fork (processus séparé)
+        script: 'build-script.js' // Chemin vers le script de construction dédié
     }]
 };
