@@ -6,7 +6,14 @@ module.exports = {
             script: 'build/server.js',
             instances: 1,
             autorestart: true,
-            watch: false,
+            watch: true, // Active la surveillance des fichiers
+            ignore_watch: [
+                // Ajoutez les répertoires que vous souhaitez ignorer ici
+                'node_modules',
+                'logs',
+                '.env',
+                'build',
+            ],
             max_memory_restart: '1G',
             env: {
                 NODE_ENV: 'development',
@@ -15,14 +22,9 @@ module.exports = {
                 NODE_ENV: 'production',
             },
             exec_mode: 'fork',
-            // Hooks pour gérer les étapes d'installation et de construction
+            // Hooks pour les étapes d'installation et de construction
             hooks: {
-                'pre-setup': 'npm install --production',
-                'post-setup': 'npm run build',
-                'pre-deploy': 'npm install --production',
-                'post-deploy': 'npm run build && pm2 startOrRestart ecosystem.config.js --env production',
-                'pre-restart': 'npm run build',
-                'post-restart': 'echo "Application restarted"',
+                'pre-restart': 'npm install && npm run build',
             },
         },
     ],
