@@ -5,4 +5,5 @@ nodemon.json
 src/Doc
 /config
 src/config/dbConfig.ts
+build/config/dbConfig.ts
 src/utils/logs
