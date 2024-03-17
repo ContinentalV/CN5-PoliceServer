@@ -19,6 +19,7 @@ module.exports = {
         env_production: {
             "NODE_ENV": "production",
             // Définissez ici d'autres variables d'environnement pour le mode production
-        }
+        },
+        post_update: ["npm install && npm run build"] // Chemins absolus vers les commandes d'installation et de construction
     }]
 };
