@@ -11,7 +11,7 @@ const PORT = parseInt(process.env.PORT || '8005', 10);
 app_1.default.listen(PORT, async () => {
     try {
         (0, functions_1.logInfo)(`API Start on ${PORT}`);
-        console.log("ci ca saffiche alors on est goooood ");
+        console.log("all good");
     }
     catch (err) {
         if (err instanceof Error) {
