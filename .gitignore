@@ -4,5 +4,5 @@ nodemon.json
 .idea
 src/Doc
 /config
-src/config/dbConfig.ts
+ src/config/dbConfig.ts
 src/utils/logs
