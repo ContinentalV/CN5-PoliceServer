@@ -12,7 +12,7 @@ module.exports = {
                 'node_modules',
                 'logs',
                 '.env',
-                'build',
+                'build/utils',
             ],
             max_memory_restart: '1G',
             env: {

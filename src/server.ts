@@ -14,7 +14,7 @@ app.listen(PORT, async () => {
     try {
 
         logInfo(`API Start on ${PORT}`);
-        console.log("ci c'est rebuild alors ce message s'affichera en version prodcution  ")
+        console.log("ci ca saffiche alors on est goooood ")
     } catch (err) {
         if (err instanceof Error) {
             logError(err.message);
