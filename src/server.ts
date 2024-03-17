@@ -14,7 +14,7 @@ app.listen(PORT, async () => {
     try {
 
         logInfo(`API Start on ${PORT}`);
-        console.log("all good")
+        console.log("all good test encore")
     } catch (err) {
         if (err instanceof Error) {
             logError(err.message);
