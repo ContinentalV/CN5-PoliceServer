@@ -23,9 +23,7 @@ module.exports = {
             },
             exec_mode: 'fork',
             // Hooks pour les étapes d'installation et de construction
-            hooks: {
-                'pre-restart': 'npm install && npm run build',
-            },
+
         },
     ],
 };
