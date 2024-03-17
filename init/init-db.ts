@@ -17,7 +17,7 @@ async function createDatabaseAndUser() {
         await sequelizeAdmin.query(`CREATE DATABASE IF NOT EXISTS \`${dbName}\`;`);
         console.log(`Base de données ${dbName} créée ou existait déjà.`);
 
-        // Créer l'utilisateur (Notez que la création d'utilisateurs peut varier selon vos besoins de sécurité et configuration MySQL)
+        // Créer l'utilisateur
         await sequelizeAdmin.query(`CREATE USER IF NOT EXISTS '${dbUser}'@'127.0.0.1' IDENTIFIED BY '${dbPassword}';`);
         console.log(`Utilisateur ${dbUser} créé ou existait déjà.`);
 

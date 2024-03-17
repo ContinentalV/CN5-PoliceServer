@@ -14,9 +14,6 @@ app.listen(PORT, async () => {
     try {
 
         logInfo(`API Start on ${PORT}`);
-        //await checkTables();
-        // setInterval(monitorPerformance, 10000);
-        //await monitorPerformance();
     } catch (err) {
         if (err instanceof Error) {
             logError(err.message);

@@ -21,11 +21,11 @@ const getMemberById = async (discordId: string): Promise<IUser | null> => {
                 username: row.username,
                 nomRP: row.nomRP,
                 avatar: row.avatar,
-                codeMetier: row.codeMetier, // Peut être undefined si la colonne peut être NULL
-                dateJoin: row.dateJoin,     // Peut être undefined, formattez comme Date si nécessaire
-                matricule: row.matricule,   // Peut être undefined
-                idServeur: row.idServeur,   // Peut être undefined
-                roles: row.roles, // Peut être undefined$
+                codeMetier: row.codeMetier,
+                dateJoin: row.dateJoin,
+                matricule: row.matricule,
+                idServeur: row.idServeur,
+                roles: row.roles,
                 etatMajor: row.etatMajor
             };
             return user;

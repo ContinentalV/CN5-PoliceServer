@@ -14,7 +14,7 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "policeneo",
+    "username": "police",
     "password": "azerty1234&&@&",
     "database": "prod_police_manager",
     "host": "127.0.0.1",

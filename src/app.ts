@@ -31,8 +31,8 @@ let botOn = false
 
 app.use(morgan("common"))
 const corsOptions = {
-    origin: 'http://localhost:3000', // Remplacez ceci par l'origine exacte de votre front-end
-    credentials: true, // Permet d'accepter les cookies transfrontaliers
+    origin: 'http://localhost:3000',
+    credentials: true,
 };
 
 app.use(cors(corsOptions));
