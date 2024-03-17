@@ -33,7 +33,7 @@ const createRoleFromListRole = async (roleId: string, name: string, color: strin
 
 
         // Insertion des données dans la table listrole
-        const insertQuery = `INSERT INTO listrole (roleId, name, color, serverId) VALUE (?, ?, ?, ?) `;
+        const insertQuery = `INSERT INTO ListRole (roleId, name, color, serverId) VALUE (?, ?, ?, ?) `;
         await connection.query(insertQuery, [roleId, name, color, serverId]);
 
     } catch (error) {
