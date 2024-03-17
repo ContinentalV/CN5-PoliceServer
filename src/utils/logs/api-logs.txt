@@ -47595,3 +47595,40 @@ Vérification table:: services
 Vérification table:: userrole
 Vérification table:: users table(s) dans la base de données.
 [14/03/2024 20:20:15] DB: Vérification déroulé avec succès ✅✅
+[17/03/2024 16:39:01] INFO: API Start on 8000
+[17/03/2024 16:46:13] INFO: API Start on 8000
+[17/03/2024 16:49:48] INFO: API Start on 8000
+[17/03/2024 16:50:46] INFO: API Start on 8000
+[17/03/2024 16:56:10] INFO: message: AGENT: 465144095996772369 => agent supprimer
+[17/03/2024 17:00:12] INFO: message: AGENT: 1142397884000653354 => agent supprimer
+[17/03/2024 17:09:09] INFO: message: AGENT: 1142397884000653354 => agent supprimer
+[17/03/2024 17:11:08] INFO: message: AGENT: 1142397884000653354 => agent supprimer
+[17/03/2024 17:18:44] INFO: API Start on 8000
+[17/03/2024 17:21:35] INFO: message: AGENT: 1142397884000653354 => agent supprimer
+[17/03/2024 17:24:01] INFO: API Start on 8000
+[17/03/2024 17:24:44] INFO: message: AGENT: 1142397884000653354 => agent supprimer
+[17/03/2024 17:29:22] INFO: API Start on 8000
+[17/03/2024 17:29:32] INFO: API Start on 8000
+[17/03/2024 17:31:02] INFO: message: AGENT: 1142397884000653354 => agent supprimer
+[17/03/2024 17:34:09] INFO: message: AGENT: 1142397884000653354 => agent supprimer
+[17/03/2024 17:35:08] INFO: message: AGENT: 1142397884000653354 => agent supprimer
+[17/03/2024 17:36:43] INFO: API Start on 8000
+[17/03/2024 17:36:56] INFO: API Start on 8000
+[17/03/2024 17:37:17] INFO: message: AGENT: 465144095996772369 => agent supprimer
+[17/03/2024 17:37:24] INFO: message: AGENT: 1142397884000653354 => agent supprimer
+[17/03/2024 17:38:41] INFO: API Start on 8000
+[17/03/2024 17:40:09] INFO: API Start on 8000
+[17/03/2024 17:40:35] INFO: API Start on 8000
+[17/03/2024 17:40:45] INFO: API Start on 8000
+[17/03/2024 17:40:55] INFO: API Start on 8000
+[17/03/2024 17:41:52] INFO: API Start on 8000
+[17/03/2024 17:42:20] INFO: API Start on 8000
+[17/03/2024 17:42:37] INFO: message: AGENT: 1142397884000653354 => agent supprimer
+[17/03/2024 17:43:46] INFO: API Start on 8000
+[17/03/2024 17:43:49] INFO: API Start on 8000
+[17/03/2024 17:44:00] INFO: message: AGENT: 1142397884000653354 => agent supprimer
+[17/03/2024 17:45:06] INFO: API Start on 8000
+[17/03/2024 17:45:11] INFO: API Start on 8000
+[17/03/2024 17:48:34] INFO: API Start on 8000
+[17/03/2024 17:49:01] INFO: API Start on 8000
+[17/03/2024 17:49:36] INFO: message: AGENT: 1142397884000653354 => agent supprimer

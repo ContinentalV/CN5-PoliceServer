@@ -231,22 +231,37 @@ const updateMemberInfo = async (discordId: string, updates: any): Promise<void> 
 };
 
 const updateMemberRole = async (discordId: string, newRoleId: string): Promise<void> => {
-    const connection = await pool.getConnection()
+    const connection = await pool.getConnection();
     try {
+        // Vérifiez d'abord si l'utilisateur existe
+        const [users] = await connection.query(
+            `SELECT * FROM Userrole WHERE userId = ?`,
+            [discordId]
+        );
 
-        await connection.query(`UPDATE Userrole
-                                SET roleId = ?
-                                WHERE userId = ?`, [newRoleId, discordId]
-        )
+        if (users.length === 0) {
+            // L'utilisateur n'existe pas, donc nous l'insérons
+            await connection.query(
+                `INSERT INTO Userrole (userId, roleId) VALUES (?, ?)`,
+                [discordId, newRoleId]
+            );
+        } else {
+            // L'utilisateur existe, donc nous mettons à jour son rôle
+            await connection.query(
+                `UPDATE Userrole SET roleId = ? WHERE userId = ?`,
+                [newRoleId, discordId]
+            );
+        }
 
     } catch (e) {
-        throw e
+        // Gestion des erreurs
+        throw e;
     } finally {
-        connection.release()
+        // Assurez-vous de libérer la connexion dans tous les cas
+        connection.release();
     }
+};
 
-
-}
 
 
 // Plus de fonctions pour mettre à jour et supprimer des membres...

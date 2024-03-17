@@ -29,7 +29,7 @@ let existingFields = [];
 let lastUpdate = null
 let botOn = false
 
-app.use(morgan("common"))
+app.use(morgan("dev"))
 const corsOptions = {
     origin: 'http://localhost:3000',
     credentials: true,
@@ -38,7 +38,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(responseTimeTracker);
 app.use(express.json());
-app.use(timeout('5s'));
+app.use(timeout('10s'));
 app.use(cookieParser())
 
 app.use('/auth', authRoute)
