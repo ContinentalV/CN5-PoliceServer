@@ -2,6 +2,7 @@ import app from "./app";
 import {checkTables} from "./config/dbConfig";
 import 'dotenv/config';
 import {logError, logInfo} from "./utils/functions";
+import cors from "cors";
 
 
 // Convertir explicitement PORT en number si nécessaire
@@ -12,10 +13,14 @@ app.listen(PORT, async () => {
 
 
     try {
-
+        const corsOptions = {
+            origin: 'https://www.policeapp.vibrant-darwin.37-60-246-29.plesk.page/',
+            credentials: true,
+        };
+        app.set('trust proxy', 'loopback')
+        app.use(cors(corsOptions));
         logInfo(`API Start on ${PORT}`);
-        console.log("all good test encore")
-        console.log("ajout installation bcrypt")
+
     } catch (err) {
         if (err instanceof Error) {
             logError(err.message);

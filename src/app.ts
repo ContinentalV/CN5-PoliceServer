@@ -7,7 +7,6 @@ import serviceRoutes from "./routes/serviceRoutes";
 import profileRoutes from "./routes/profileRoutes";
 import {errorHandler} from './midlleware/errorMiddleware';
 import {responseTimeTracker} from "./midlleware/responseTimeTracker";
-import cors from "cors"
 import {formatUptime, updateEmbedMessage} from "./utils/utilFn";
 import dayjs from "dayjs";
 import statdataRoutes from "./routes/statdataRoutes";
@@ -30,12 +29,7 @@ let lastUpdate = null
 let botOn = false
 
 app.use(morgan("dev"))
-const corsOptions = {
-    origin: 'http://localhost:3000',
-    credentials: true,
-};
 
-app.use(cors(corsOptions));
 app.use(responseTimeTracker);
 app.use(express.json());
 app.use(timeout('10s'));
