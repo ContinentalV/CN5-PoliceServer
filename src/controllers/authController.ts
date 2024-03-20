@@ -12,7 +12,7 @@ const router = express.Router()
 router.post('/token', async (req: Request, res: Response, next: NextFunction) => {
     const {code} = req.body;
     console.log("Route auth token")
-    console.log(process.env.DISCORD_CLIENT)
+
     try {
         const response = await axios.post('https://discord.com/api/oauth2/token',
             `client_id=${encodeURIComponent(process.env.DISCORD_CLIENT!)}&` +
@@ -27,7 +27,6 @@ router.post('/token', async (req: Request, res: Response, next: NextFunction) =>
             });
 
         console.log(response.status)
-        console.log(response)
         console.log(response?.data)
 
         if (response.status === 200 || response.status === 204) {
