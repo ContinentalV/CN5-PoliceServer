@@ -14,7 +14,7 @@ app.listen(PORT, async () => {
 
     try {
         const corsOptions = {
-            origin: 'https://www.policeapp.vibrant-darwin.37-60-246-29.plesk.page/',
+            origin: 'https://www.policeapp.vibrant-darwin.37-60-246-29.plesk.page',
             credentials: true,
         };
         app.set('trust proxy', 'loopback')
