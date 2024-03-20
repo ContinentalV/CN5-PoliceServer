@@ -17,7 +17,7 @@ app.listen(PORT, async () => {
             origin: 'https://www.policeapp.vibrant-darwin.37-60-246-29.plesk.page',
             credentials: true,
         };
-        app.set('trust proxy', 'loopback')
+       // app.set('trust proxy', 'loopback')
         app.use(cors(corsOptions));
         logInfo(`API Start on ${PORT}`);
 
