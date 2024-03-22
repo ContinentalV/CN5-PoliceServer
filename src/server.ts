@@ -14,9 +14,10 @@ app.listen(PORT, async () => {
 
     try {
         const corsOptions = {
-            origin: 'https://police.continentalv.fr',
+            origin: process.env.CUSTOM_ENV == "production" ? 'https://police.continentalv.fr' : "http://localhost:8000",
             credentials: true,
         };
+        console.log(corsOptions)
         app.set('trust proxy', 'loopback')
 
         app.use(cors(corsOptions));
