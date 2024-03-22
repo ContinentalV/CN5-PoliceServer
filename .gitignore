@@ -3,7 +3,7 @@
 nodemon.json
 .idea
 src/Doc
-/config
-src/config/dbConfig.ts
-build/config/dbConfig.js
+
+
+
 src/utils/logs
