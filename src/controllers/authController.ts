@@ -11,7 +11,6 @@ const router = express.Router()
 
 router.post('/token', async (req: Request, res: Response, next: NextFunction) => {
     const {code} = req.body;
-    console.log("Route auth token")
 
     try {
         const response = await axios.post('https://discord.com/api/oauth2/token',
@@ -28,6 +27,7 @@ router.post('/token', async (req: Request, res: Response, next: NextFunction) =>
 
         console.log(response.status)
         console.log(response?.data)
+
 
         if (response.status === 200 || response.status === 204) {
             const accessToken = response.data.access_token;
@@ -80,7 +80,9 @@ router.post('/token', async (req: Request, res: Response, next: NextFunction) =>
 
 router.get('/verify', async (req: Request, res: Response) => {
 
+
     try {
+
         const token = req.cookies.jwt;
         const decoded = jwt.verify(token, process.env.JWT_SECRET!);
         const user = await memberService.getMemberById(decoded.userId);

@@ -14,11 +14,13 @@ app.listen(PORT, async () => {
 
     try {
         const corsOptions = {
-            origin: 'https://www.policeapp.vibrant-darwin.37-60-246-29.plesk.page',
+            origin: 'https://police.continentalv.fr',
             credentials: true,
         };
-       // app.set('trust proxy', 'loopback')
+        app.set('trust proxy', 'loopback')
+
         app.use(cors(corsOptions));
+        app.options('*', cors(corsOptions));
         logInfo(`API Start on ${PORT}`);
 
     } catch (err) {

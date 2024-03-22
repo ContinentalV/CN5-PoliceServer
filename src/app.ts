@@ -46,7 +46,12 @@ app.use("/perf", statdataRoutes)
 app.use("/:serveurId", roleServeurController)
 app.use("/roles/members", gradesMemberRoutes)
 
-
+app.use((req, res, next) => {
+    res.on('finish', () => {
+        console.log('Response Headers:', res.getHeaders());
+    });
+    next();
+});
 
 app.post("/health/bot", async (req, res, next) => {
     const dataHealth = req.body
