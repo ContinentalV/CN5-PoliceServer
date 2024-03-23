@@ -4,7 +4,7 @@ import {BaseError} from '../utils/CustomError';
 
 export function errorHandler(err: Error, req: Request, res: Response, next: NextFunction) {
     if (err instanceof BaseError) {
-        // Ici, vous pouvez également ajouter des logs
+
         return res.status(err.statusCode).json({message: err.message.toString(), level: err.level});
     }
 

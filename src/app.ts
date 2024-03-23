@@ -1,4 +1,4 @@
-import express from 'express';
+import express, {Request, Response} from 'express';
 import timeout from 'connect-timeout';
 import memberRoutes from "./routes/memberRoutes";
 import ServerRoutes from "./routes/serverRoutes";
@@ -10,16 +10,21 @@ import {responseTimeTracker} from "./midlleware/responseTimeTracker";
 import {formatUptime, updateEmbedMessage} from "./utils/utilFn";
 import dayjs from "dayjs";
 import statdataRoutes from "./routes/statdataRoutes";
-import morgan from "morgan";
+import morgan, {TokenIndexer } from "morgan";
 import discordAPIRoutes from "./routes/discordAPIRoutes";
 import authRoute from "./routes/authRoute";
 import dotenv from 'dotenv';
 import cookieParser from "cookie-parser";
 import roleServeurController from "./controllers/roleServeurController";
 import gradesMemberRoutes from "./routes/gradesMemberRoutes";
+import {logger} from "./syslog/logger";
+import {networkLoggerMiddleware} from "./midlleware/networkMiddleware";
+import chalk from "chalk";
+import path from "path";
+import fs from "fs";
+
 
 dotenv.config()
-
 //TODO Deplacer la route avec son propre controlleur etc...
 //TODO FIXE CRITICAL DONT SHOW IN DASH API WEBHOOK
 const messageId = "1198267464153301043"
@@ -28,13 +33,29 @@ let existingFields = [];
 let lastUpdate = null
 let botOn = false
 
-app.use(morgan("dev"))
 
+
+// Configuration du format de log Morgan pour la console avec Chalk
+const morganFormatConsole = (tokens:TokenIndexer<Request, Response>, req: Request, res: Response):string => {
+    const http = chalk.bgHex('#00278b').whiteBright.bold('HTTP:');
+    const method = chalk.bgHex('#b90000').whiteBright.bold(tokens.method(req, res));
+    const url = chalk.hex('#a24e2a').bold(tokens.url(req, res));
+    const arrow = chalk.hex('#ff793f')('→');
+    const status = chalk.hex('#2ed573').bold(tokens.status(req, res));
+    const responseTime = chalk.hex('#ccc917').bold(`${tokens['response-time'](req, res)}ms`);
+    const date = chalk.bgHex('#0b0a0a').whiteBright(tokens.date(req, res, 'iso'));
+
+    return `${date}|::|${http} ${method} ${url} ${arrow} ${status} ${responseTime} `;
+};
+const morganFormatFile = ':method :url :status :response-time ms - :date[iso]\n';
+const morganStream = fs.createWriteStream(path.join(__dirname, '../logs/morgan.log'), { flags: 'a' });
+app.use(morgan(morganFormatConsole));
+app.use(morgan(morganFormatFile, { stream: morganStream }));
+app.use(networkLoggerMiddleware);
 app.use(responseTimeTracker);
 app.use(express.json());
 app.use(timeout('10s'));
 app.use(cookieParser())
-
 app.use('/auth', authRoute)
 app.use('/discord', discordAPIRoutes);
 app.use('/members', memberRoutes);
@@ -46,6 +67,16 @@ app.use("/perf", statdataRoutes)
 app.use("/:serveurId", roleServeurController)
 app.use("/roles/members", gradesMemberRoutes)
 
+app.get('/error', (req, res) => {
+    try {
+        // Simuler une erreur
+        throw new Error('Ceci est une erreur simulée.');
+
+    } catch (error) {
+        logger.error("La requête a été traitée avec succès.");
+    }
+    res.send('Erreur capturée et loguée.');
+});
 
 
 app.post("/health/bot", async (req, res, next) => {

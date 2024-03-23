@@ -156,6 +156,8 @@ const updateMemberMatricule = async (discordId: string, newMatricule: number, co
                             WHERE matricule = ?
                               AND codeMetier = ?`;
         const [checkResult] = await connection.query(checkQuery, [newMatricule, codeMetier]);
+
+
         if (Array.isArray(checkResult)) {
             const countResult = checkResult[0] as RowDataPacket; // Type assertion
             if (countResult.count > 0) {

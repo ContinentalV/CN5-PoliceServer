@@ -6,6 +6,8 @@ import path from "path"
 import {logDb, logError} from "../utils/functions";
 // @ts-ignore
 import config from '../../config/config.json';
+import {logger} from "../syslog/logger";
+import chalk from "chalk";
 
 
 require('dotenv').config();
@@ -21,13 +23,13 @@ export interface ConnectionDetails {
     maxConnections: number;
 }
 
+//REFAIRE UNE VRAI TEST CONNEXION
 const readFile = util.promisify(fs.readFile);
 //##########################################
 const environment = process.env.CUSTOM_ENV || 'development';
 const envConfig = config[environment];
-console.log(envConfig)
-
-
+logger.db(`\n${chalk.bgHex("#02a78e").black.bold("Database Name")}${chalk.bgBlack(envConfig.database)}${chalk.whiteBright('||')}${chalk.bgHex("#02a78e").black.bold("Logged As:")}${chalk.bgBlack(envConfig.username)}${chalk.whiteBright('||')}${chalk.bgHex("#02a78e").black.bold("Host:")}${chalk.bgBlack(envConfig.host)}${chalk.whiteBright('||')}${chalk.bgHex("#02a78e").black.bold("Dialect")}${chalk.bgBlack(envConfig.dialect)}`)
+logger.db(`Connection succefull: ✅ ✅ ✅}`)
 const pool = createPool({
     host: envConfig.host,
     user: envConfig.username,

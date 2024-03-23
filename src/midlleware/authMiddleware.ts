@@ -23,6 +23,7 @@ export const authenticateBotToken = (req: Request, res: Response, next: NextFunc
 
     const botToken = req.headers['authorization']?.split(" ")[1]; // Supposons que le format soit "Bot <token>"
 
+
     if (botToken && botToken === process.env.BOT_TOKEN) {
         next();
     } else {

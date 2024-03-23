@@ -1,8 +1,8 @@
 'use strict';
 
 module.exports = {
-    async up(queryInterface, Sequelize) {
-        const procedure = `CREATE PROCEDURE CalculateSalary(IN p_discordId VARCHAR(255), OUT p_totalSalary INT)
+  async up(queryInterface, Sequelize) {
+    const procedure = `CREATE PROCEDURE CalculateSalary(IN p_discordId VARCHAR(255), OUT p_totalSalary INT)
 BEGIN
     DECLARE v_baseSalary INT DEFAULT 0;
     DECLARE v_totalServiceMinutes INT DEFAULT 0;
@@ -15,14 +15,14 @@ BEGIN
     IF v_totalServiceMinutes < 690 THEN
         SET p_totalSalary = 0;
     ELSE
-        SET p_totalSalary = v_baseSalary + FLOOR((v_totalServiceMinutes - 690) / 300) * 250000;
+        SET p_totalSalary = v_baseSalary + FLOOR((v_totalServiceMinutes - 690) / 300) * 300000;
     END IF;
 END;`;
 
-        return queryInterface.sequelize.query(procedure);
-    },
+    return queryInterface.sequelize.query(procedure);
+  },
 
-    async down(queryInterface, Sequelize) {
-        return queryInterface.sequelize.query("DROP PROCEDURE IF EXISTS CalculateSalary;");
-    }
+  async down(queryInterface, Sequelize) {
+    return queryInterface.sequelize.query("DROP PROCEDURE IF EXISTS CalculateSalary;");
+  }
 };

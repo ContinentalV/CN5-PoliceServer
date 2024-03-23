@@ -1,0 +1,1578 @@
+GET /stats/stats/json/conti 200 48.767 ms - 2024-03-23T10:52:04.886Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.405 ms - 2024-03-23T10:52:04.891Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.469 ms - 2024-03-23T10:52:04.895Z
+
+GET /stats/stats/json/conti 200 34.264 ms - 2024-03-23T10:52:19.882Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.232 ms - 2024-03-23T10:52:19.887Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.270 ms - 2024-03-23T10:52:19.892Z
+
+GET /stats/stats/json/conti 200 54.311 ms - 2024-03-23T10:52:34.903Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.878 ms - 2024-03-23T10:52:34.908Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.497 ms - 2024-03-23T10:52:34.913Z
+
+GET /stats/stats/json/conti 200 50.429 ms - 2024-03-23T10:52:49.901Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.102 ms - 2024-03-23T10:52:49.905Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.350 ms - 2024-03-23T10:52:49.909Z
+
+GET /stats/stats/json/conti 200 3321.395 ms - 2024-03-23T10:53:08.186Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 16.360 ms - 2024-03-23T10:53:08.205Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.450 ms - 2024-03-23T10:53:08.210Z
+
+POST /health/bot 200 226.993 ms - 2024-03-23T10:53:08.347Z
+
+GET /stats/stats/json/conti 200 45.515 ms - 2024-03-23T10:53:19.916Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.576 ms - 2024-03-23T10:53:19.922Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.734 ms - 2024-03-23T10:53:19.927Z
+
+GET /stats/stats/json/conti 200 47.737 ms - 2024-03-23T10:53:34.927Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.906 ms - 2024-03-23T10:53:34.933Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.447 ms - 2024-03-23T10:53:34.937Z
+
+GET /stats/stats/json/conti 200 79.097 ms - 2024-03-23T10:54:04.988Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 17.844 ms - 2024-03-23T10:54:05.009Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.814 ms - 2024-03-23T10:54:05.013Z
+
+GET /stats/stats/json/conti 200 92.361 ms - 2024-03-23T10:54:20.008Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 22.408 ms - 2024-03-23T10:54:20.034Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.208 ms - 2024-03-23T10:54:20.040Z
+
+GET /stats/stats/json/conti 200 46.064 ms - 2024-03-23T10:54:34.955Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.785 ms - 2024-03-23T10:54:34.960Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.633 ms - 2024-03-23T10:54:34.964Z
+
+GET /stats/stats/json/conti 200 43.149 ms - 2024-03-23T10:54:49.964Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.224 ms - 2024-03-23T10:54:49.968Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.232 ms - 2024-03-23T10:54:49.972Z
+
+GET /stats/stats/json/conti 200 47.994 ms - 2024-03-23T10:55:04.971Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.273 ms - 2024-03-23T10:55:04.976Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.430 ms - 2024-03-23T10:55:04.981Z
+
+GET /stats/stats/json/conti 200 55.204 ms - 2024-03-23T10:55:19.984Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.529 ms - 2024-03-23T10:55:19.988Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.171 ms - 2024-03-23T10:55:19.993Z
+
+GET /stats/stats/json/conti 200 42.626 ms - 2024-03-23T10:55:34.980Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.362 ms - 2024-03-23T10:55:34.984Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.299 ms - 2024-03-23T10:55:34.989Z
+
+POST /health/bot 200 206.296 ms - 2024-03-23T10:55:48.330Z
+
+GET /stats/stats/json/conti 200 44.559 ms - 2024-03-23T10:55:49.986Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.625 ms - 2024-03-23T10:55:49.992Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.408 ms - 2024-03-23T10:55:49.997Z
+
+GET /stats/stats/json/conti 200 36.701 ms - 2024-03-23T10:56:04.984Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.505 ms - 2024-03-23T10:56:04.989Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.276 ms - 2024-03-23T10:56:04.993Z
+
+GET /stats/stats/json/conti 200 42.556 ms - 2024-03-23T10:56:20.003Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 1.793 ms - 2024-03-23T10:56:20.006Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.561 ms - 2024-03-23T10:56:20.011Z
+
+GET /stats/stats/json/conti 200 37.582 ms - 2024-03-23T10:56:35.000Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.293 ms - 2024-03-23T10:56:35.004Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.453 ms - 2024-03-23T10:56:35.008Z
+
+GET /stats/stats/json/conti 200 53.253 ms - 2024-03-23T10:56:50.027Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.588 ms - 2024-03-23T10:56:50.032Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.119 ms - 2024-03-23T10:56:50.036Z
+
+GET /stats/stats/json/conti 200 64.918 ms - 2024-03-23T10:57:05.054Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.458 ms - 2024-03-23T10:57:05.060Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.800 ms - 2024-03-23T10:57:05.066Z
+
+GET /stats/stats/json/conti 200 41.597 ms - 2024-03-23T10:57:20.036Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.408 ms - 2024-03-23T10:57:20.041Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.008 ms - 2024-03-23T10:57:20.045Z
+
+GET /stats/stats/json/conti 200 43.226 ms - 2024-03-23T10:57:35.044Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.391 ms - 2024-03-23T10:57:35.050Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.046 ms - 2024-03-23T10:57:35.054Z
+
+GET /stats/stats/json/conti 200 42.013 ms - 2024-03-23T10:57:50.051Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.059 ms - 2024-03-23T10:57:50.056Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 1.958 ms - 2024-03-23T10:57:50.060Z
+
+GET /stats/stats/json/conti 200 45.158 ms - 2024-03-23T10:58:05.057Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 1.924 ms - 2024-03-23T10:58:05.061Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.425 ms - 2024-03-23T10:58:05.065Z
+
+GET /stats/stats/json/conti 200 43.773 ms - 2024-03-23T10:58:20.068Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.732 ms - 2024-03-23T10:58:20.073Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.450 ms - 2024-03-23T10:58:20.077Z
+
+POST /health/bot 200 225.967 ms - 2024-03-23T10:58:28.356Z
+
+GET /stats/stats/json/conti 200 65.458 ms - 2024-03-23T10:58:35.088Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.177 ms - 2024-03-23T10:58:35.093Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.337 ms - 2024-03-23T10:58:35.097Z
+
+GET /stats/stats/json/conti 200 61.006 ms - 2024-03-23T10:58:50.089Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.653 ms - 2024-03-23T10:58:50.093Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.416 ms - 2024-03-23T10:58:50.098Z
+
+GET /stats/stats/json/conti 200 45.987 ms - 2024-03-23T10:59:05.083Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.154 ms - 2024-03-23T10:59:05.087Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.135 ms - 2024-03-23T10:59:05.091Z
+
+GET /stats/stats/json/conti 200 56.494 ms - 2024-03-23T10:59:20.106Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.802 ms - 2024-03-23T10:59:20.112Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.419 ms - 2024-03-23T10:59:20.116Z
+
+GET /stats/stats/json/conti 200 42.047 ms - 2024-03-23T10:59:35.094Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.077 ms - 2024-03-23T10:59:35.100Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.464 ms - 2024-03-23T10:59:35.105Z
+
+GET /stats/stats/json/conti 200 33.574 ms - 2024-03-23T10:59:50.095Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.550 ms - 2024-03-23T10:59:50.099Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 1.741 ms - 2024-03-23T10:59:50.102Z
+
+GET /stats/stats/json/conti 200 45.048 ms - 2024-03-23T11:00:05.108Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.197 ms - 2024-03-23T11:00:05.113Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.488 ms - 2024-03-23T11:00:05.117Z
+
+GET /stats/stats/json/conti 200 63.567 ms - 2024-03-23T11:00:20.129Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.251 ms - 2024-03-23T11:00:20.132Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 1.923 ms - 2024-03-23T11:00:20.136Z
+
+GET /stats/stats/json/conti 200 37.696 ms - 2024-03-23T11:00:35.110Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 1.836 ms - 2024-03-23T11:00:35.114Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.075 ms - 2024-03-23T11:00:35.119Z
+
+GET /stats/stats/json/conti 200 40.560 ms - 2024-03-23T11:00:50.119Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.607 ms - 2024-03-23T11:00:50.134Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.146 ms - 2024-03-23T11:00:50.138Z
+
+GET /stats/stats/json/conti 200 42.393 ms - 2024-03-23T11:01:05.136Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.447 ms - 2024-03-23T11:01:05.140Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.040 ms - 2024-03-23T11:01:05.145Z
+
+POST /health/bot 200 200.759 ms - 2024-03-23T11:01:08.332Z
+
+GET /stats/stats/json/conti 200 36.442 ms - 2024-03-23T11:01:20.135Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.040 ms - 2024-03-23T11:01:20.139Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 1.532 ms - 2024-03-23T11:01:20.142Z
+
+GET /stats/stats/json/conti 200 50.783 ms - 2024-03-23T11:01:35.157Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.242 ms - 2024-03-23T11:01:35.161Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 1.660 ms - 2024-03-23T11:01:35.164Z
+
+GET /stats/stats/json/conti 200 40.787 ms - 2024-03-23T11:01:50.161Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 1.996 ms - 2024-03-23T11:01:50.165Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.116 ms - 2024-03-23T11:01:50.169Z
+
+GET /stats/stats/json/conti 200 40.942 ms - 2024-03-23T11:02:05.173Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.053 ms - 2024-03-23T11:02:05.177Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 1.843 ms - 2024-03-23T11:02:05.180Z
+
+GET /stats/stats/json/conti 200 38.981 ms - 2024-03-23T11:02:20.184Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.316 ms - 2024-03-23T11:02:20.188Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.692 ms - 2024-03-23T11:02:20.193Z
+
+GET /stats/stats/json/conti 200 130.328 ms - 2024-03-23T11:02:35.300Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 29.582 ms - 2024-03-23T11:02:35.333Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.511 ms - 2024-03-23T11:02:35.339Z
+
+GET /stats/stats/json/conti 200 46.723 ms - 2024-03-23T11:02:50.198Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.816 ms - 2024-03-23T11:02:50.204Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.235 ms - 2024-03-23T11:02:50.210Z
+
+GET /stats/stats/json/conti 200 39.117 ms - 2024-03-23T11:03:05.195Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.204 ms - 2024-03-23T11:03:05.201Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.541 ms - 2024-03-23T11:03:05.206Z
+
+GET /stats/stats/json/conti 200 57.963 ms - 2024-03-23T11:03:20.224Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.627 ms - 2024-03-23T11:03:20.232Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 12.934 ms - 2024-03-23T11:03:20.247Z
+
+GET /stats/stats/json/conti 200 38.116 ms - 2024-03-23T11:03:35.204Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.367 ms - 2024-03-23T11:03:35.209Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.060 ms - 2024-03-23T11:03:35.214Z
+
+POST /health/bot 200 218.517 ms - 2024-03-23T11:03:48.360Z
+
+GET /stats/stats/json/conti 200 43.297 ms - 2024-03-23T11:03:50.221Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.930 ms - 2024-03-23T11:03:50.226Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.782 ms - 2024-03-23T11:03:50.231Z
+
+GET /stats/stats/json/conti 200 47.089 ms - 2024-03-23T11:04:05.239Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.006 ms - 2024-03-23T11:04:05.253Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.273 ms - 2024-03-23T11:04:05.259Z
+
+GET /stats/stats/json/conti 200 50.691 ms - 2024-03-23T11:04:20.251Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.966 ms - 2024-03-23T11:04:20.257Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.287 ms - 2024-03-23T11:04:20.262Z
+
+GET /stats/stats/json/conti 200 68.980 ms - 2024-03-23T11:04:35.276Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.109 ms - 2024-03-23T11:04:35.281Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.881 ms - 2024-03-23T11:04:35.286Z
+
+GET /stats/stats/json/conti 200 46.157 ms - 2024-03-23T11:04:50.260Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.148 ms - 2024-03-23T11:04:50.266Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.719 ms - 2024-03-23T11:04:50.270Z
+
+GET /stats/stats/json/conti 200 37.058 ms - 2024-03-23T11:05:05.258Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.075 ms - 2024-03-23T11:05:05.263Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 1.924 ms - 2024-03-23T11:05:05.266Z
+
+GET /stats/stats/json/conti 200 62.518 ms - 2024-03-23T11:05:20.294Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.580 ms - 2024-03-23T11:05:20.298Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 1.894 ms - 2024-03-23T11:05:20.302Z
+
+GET /stats/stats/json/conti 200 53.152 ms - 2024-03-23T11:05:35.294Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.575 ms - 2024-03-23T11:05:35.299Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.643 ms - 2024-03-23T11:05:35.304Z
+
+GET /stats/stats/json/conti 200 50.732 ms - 2024-03-23T11:05:50.302Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.030 ms - 2024-03-23T11:05:50.308Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.072 ms - 2024-03-23T11:05:50.312Z
+
+GET /stats/stats/json/conti 200 43.576 ms - 2024-03-23T11:06:05.303Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.681 ms - 2024-03-23T11:06:05.307Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.220 ms - 2024-03-23T11:06:05.312Z
+
+GET /stats/stats/json/conti 200 43.698 ms - 2024-03-23T11:06:20.307Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.354 ms - 2024-03-23T11:06:20.311Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.630 ms - 2024-03-23T11:06:20.315Z
+
+POST /health/bot 200 194.946 ms - 2024-03-23T11:06:28.345Z
+
+GET /stats/stats/json/conti 200 49.207 ms - 2024-03-23T11:06:35.316Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.623 ms - 2024-03-23T11:06:35.321Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.063 ms - 2024-03-23T11:06:35.325Z
+
+GET /stats/stats/json/conti 200 68.180 ms - 2024-03-23T11:06:50.343Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.076 ms - 2024-03-23T11:06:50.348Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.387 ms - 2024-03-23T11:06:50.352Z
+
+GET /stats/stats/json/conti 200 75.204 ms - 2024-03-23T11:07:05.360Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 18.075 ms - 2024-03-23T11:07:05.381Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.004 ms - 2024-03-23T11:07:05.386Z
+
+GET /stats/stats/json/conti 200 36.043 ms - 2024-03-23T11:07:20.316Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.219 ms - 2024-03-23T11:07:20.321Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.913 ms - 2024-03-23T11:07:20.326Z
+
+GET /stats/stats/json/conti 200 53.499 ms - 2024-03-23T11:07:35.343Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.831 ms - 2024-03-23T11:07:35.348Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.288 ms - 2024-03-23T11:07:35.353Z
+
+GET /stats/stats/json/conti 200 88.563 ms - 2024-03-23T11:07:50.392Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.751 ms - 2024-03-23T11:07:50.397Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.833 ms - 2024-03-23T11:07:50.402Z
+
+GET /stats/stats/json/conti 200 39.610 ms - 2024-03-23T11:08:05.350Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.265 ms - 2024-03-23T11:08:05.354Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.294 ms - 2024-03-23T11:08:05.360Z
+
+GET /stats/stats/json/conti 200 41.186 ms - 2024-03-23T11:08:20.352Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.270 ms - 2024-03-23T11:08:20.358Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.496 ms - 2024-03-23T11:08:20.364Z
+
+GET /stats/stats/json/conti 200 44.042 ms - 2024-03-23T11:08:35.357Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.712 ms - 2024-03-23T11:08:35.363Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.872 ms - 2024-03-23T11:08:35.368Z
+
+GET /stats/stats/json/conti 200 31.213 ms - 2024-03-23T11:08:50.350Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.266 ms - 2024-03-23T11:08:50.355Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.757 ms - 2024-03-23T11:08:50.360Z
+
+GET /stats/stats/json/conti 200 37.185 ms - 2024-03-23T11:09:05.358Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.166 ms - 2024-03-23T11:09:05.363Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 1.664 ms - 2024-03-23T11:09:05.367Z
+
+POST /health/bot 200 259.243 ms - 2024-03-23T11:09:08.425Z
+
+GET /stats/stats/json/conti 200 47.889 ms - 2024-03-23T11:09:20.382Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.812 ms - 2024-03-23T11:09:20.388Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 1.774 ms - 2024-03-23T11:09:20.392Z
+
+GET /stats/stats/json/conti 200 39.834 ms - 2024-03-23T11:09:35.376Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.263 ms - 2024-03-23T11:09:35.383Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.449 ms - 2024-03-23T11:09:35.388Z
+
+GET /stats/stats/json/conti 200 34.203 ms - 2024-03-23T11:09:50.381Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.449 ms - 2024-03-23T11:09:50.386Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.312 ms - 2024-03-23T11:09:50.389Z
+
+GET /stats/stats/json/conti 200 42.213 ms - 2024-03-23T11:10:05.394Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.379 ms - 2024-03-23T11:10:05.399Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.008 ms - 2024-03-23T11:10:05.404Z
+
+GET /stats/stats/json/conti 200 68.261 ms - 2024-03-23T11:10:20.424Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.157 ms - 2024-03-23T11:10:20.429Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.757 ms - 2024-03-23T11:10:20.433Z
+
+GET /stats/stats/json/conti 200 47.575 ms - 2024-03-23T11:10:35.413Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.739 ms - 2024-03-23T11:10:35.418Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 1.924 ms - 2024-03-23T11:10:35.421Z
+
+GET /stats/stats/json/conti 200 42.043 ms - 2024-03-23T11:10:50.412Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.173 ms - 2024-03-23T11:10:50.416Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.369 ms - 2024-03-23T11:10:50.420Z
+
+GET /stats/stats/json/conti 200 39.168 ms - 2024-03-23T11:11:05.418Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.689 ms - 2024-03-23T11:11:05.422Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.486 ms - 2024-03-23T11:11:05.427Z
+
+GET /stats/stats/json/conti 200 74.737 ms - 2024-03-23T11:11:20.464Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 18.762 ms - 2024-03-23T11:11:20.485Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.560 ms - 2024-03-23T11:11:20.490Z
+
+GET /stats/stats/json/conti 200 43.238 ms - 2024-03-23T11:11:35.437Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.392 ms - 2024-03-23T11:11:35.442Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.106 ms - 2024-03-23T11:11:35.446Z
+
+POST /health/bot 200 205.397 ms - 2024-03-23T11:11:48.377Z
+
+GET /stats/stats/json/conti 200 40.788 ms - 2024-03-23T11:11:50.437Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.888 ms - 2024-03-23T11:11:50.442Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.191 ms - 2024-03-23T11:11:50.447Z
+
+GET /stats/stats/json/conti 200 37.149 ms - 2024-03-23T11:12:05.434Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.231 ms - 2024-03-23T11:12:05.438Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.305 ms - 2024-03-23T11:12:05.444Z
+
+GET /stats/stats/json/conti 200 75.055 ms - 2024-03-23T11:12:20.488Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 18.016 ms - 2024-03-23T11:12:20.508Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.145 ms - 2024-03-23T11:12:20.513Z
+
+GET /stats/stats/json/conti 200 52.730 ms - 2024-03-23T11:12:35.473Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.710 ms - 2024-03-23T11:12:35.478Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.443 ms - 2024-03-23T11:12:35.482Z
+
+GET /stats/stats/json/conti 200 35.054 ms - 2024-03-23T11:12:50.470Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.437 ms - 2024-03-23T11:12:50.475Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.196 ms - 2024-03-23T11:12:50.479Z
+
+GET /stats/stats/json/conti 200 47.345 ms - 2024-03-23T11:13:05.499Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 1.996 ms - 2024-03-23T11:13:05.502Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.629 ms - 2024-03-23T11:13:05.507Z
+
+GET /stats/stats/json/conti 200 70.860 ms - 2024-03-23T11:13:20.543Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 17.763 ms - 2024-03-23T11:13:20.563Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.360 ms - 2024-03-23T11:13:20.567Z
+
+GET /stats/stats/json/conti 200 76.351 ms - 2024-03-23T11:13:35.564Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 25.362 ms - 2024-03-23T11:13:35.592Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.835 ms - 2024-03-23T11:13:35.597Z
+
+GET /stats/stats/json/conti 200 73.394 ms - 2024-03-23T11:13:50.562Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 17.059 ms - 2024-03-23T11:13:50.581Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.773 ms - 2024-03-23T11:13:50.587Z
+
+GET /stats/stats/json/conti 200 46.563 ms - 2024-03-23T11:14:05.536Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.598 ms - 2024-03-23T11:14:05.543Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.462 ms - 2024-03-23T11:14:05.551Z
+
+GET /stats/stats/json/conti 200 42.586 ms - 2024-03-23T11:14:20.534Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.878 ms - 2024-03-23T11:14:20.542Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.684 ms - 2024-03-23T11:14:20.550Z
+
+POST /health/bot 200 218.043 ms - 2024-03-23T11:14:28.404Z
+
+GET /stats/stats/json/conti 200 42.890 ms - 2024-03-23T11:14:35.540Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.378 ms - 2024-03-23T11:14:35.546Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.364 ms - 2024-03-23T11:14:35.552Z
+
+GET /stats/stats/json/conti 200 41.694 ms - 2024-03-23T11:14:50.542Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.277 ms - 2024-03-23T11:14:50.548Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.438 ms - 2024-03-23T11:14:50.554Z
+
+GET /stats/stats/json/conti 200 369.268 ms - 2024-03-23T11:15:05.872Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.769 ms - 2024-03-23T11:15:05.878Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.138 ms - 2024-03-23T11:15:05.885Z
+
+GET /stats/stats/json/conti 200 53.686 ms - 2024-03-23T11:15:20.570Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.600 ms - 2024-03-23T11:15:20.575Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 1.831 ms - 2024-03-23T11:15:20.578Z
+
+GET /stats/stats/json/conti 200 83.976 ms - 2024-03-23T11:15:35.611Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 16.444 ms - 2024-03-23T11:15:35.630Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.411 ms - 2024-03-23T11:15:35.634Z
+
+GET /stats/stats/json/conti 200 36.146 ms - 2024-03-23T11:15:50.571Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.199 ms - 2024-03-23T11:15:50.578Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.734 ms - 2024-03-23T11:15:50.583Z
+
+GET /stats/stats/json/conti 200 94.941 ms - 2024-03-23T11:16:05.635Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.826 ms - 2024-03-23T11:16:05.640Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.273 ms - 2024-03-23T11:16:05.644Z
+
+GET /stats/stats/json/conti 200 38.183 ms - 2024-03-23T11:16:20.593Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.321 ms - 2024-03-23T11:16:20.597Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.425 ms - 2024-03-23T11:16:20.602Z
+
+GET /stats/stats/json/conti 200 62.815 ms - 2024-03-23T11:16:35.626Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.375 ms - 2024-03-23T11:16:35.631Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.201 ms - 2024-03-23T11:16:35.636Z
+
+GET /stats/stats/json/conti 200 90.997 ms - 2024-03-23T11:17:05.671Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 15.500 ms - 2024-03-23T11:17:05.689Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.034 ms - 2024-03-23T11:17:05.692Z
+
+POST /health/bot 200 206.257 ms - 2024-03-23T11:17:08.394Z
+
+GET /stats/stats/json/conti 200 42.503 ms - 2024-03-23T11:17:20.622Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.309 ms - 2024-03-23T11:17:20.626Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.285 ms - 2024-03-23T11:17:20.631Z
+
+GET /stats/stats/json/conti 200 48.807 ms - 2024-03-23T11:17:35.639Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 1.917 ms - 2024-03-23T11:17:35.643Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.730 ms - 2024-03-23T11:17:35.648Z
+
+GET /stats/stats/json/conti 200 37.465 ms - 2024-03-23T11:17:50.629Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.551 ms - 2024-03-23T11:17:50.637Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.557 ms - 2024-03-23T11:17:50.642Z
+
+GET /stats/stats/json/conti 200 1054.824 ms - 2024-03-23T11:18:06.655Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.776 ms - 2024-03-23T11:18:06.659Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.117 ms - 2024-03-23T11:18:06.663Z
+
+GET /stats/stats/json/conti 200 64.740 ms - 2024-03-23T11:18:20.678Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.474 ms - 2024-03-23T11:18:20.683Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.318 ms - 2024-03-23T11:18:20.686Z
+
+GET /stats/stats/json/conti 200 71.364 ms - 2024-03-23T11:18:35.697Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 21.458 ms - 2024-03-23T11:18:35.730Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.582 ms - 2024-03-23T11:18:35.734Z
+
+GET /stats/stats/json/conti 200 78.983 ms - 2024-03-23T11:18:50.720Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 16.735 ms - 2024-03-23T11:18:50.739Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.366 ms - 2024-03-23T11:18:50.743Z
+
+GET /stats/stats/json/conti 200 87.476 ms - 2024-03-23T11:19:05.732Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 18.396 ms - 2024-03-23T11:19:05.753Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.548 ms - 2024-03-23T11:19:05.757Z
+
+GET /stats/stats/json/conti 200 41.140 ms - 2024-03-23T11:19:20.689Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.815 ms - 2024-03-23T11:19:20.694Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.698 ms - 2024-03-23T11:19:20.699Z
+
+GET /stats/stats/json/conti 200 40.058 ms - 2024-03-23T11:19:35.694Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.219 ms - 2024-03-23T11:19:35.700Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 1.966 ms - 2024-03-23T11:19:35.703Z
+
+POST /health/bot 200 201.101 ms - 2024-03-23T11:19:48.394Z
+
+GET /stats/stats/json/conti 200 33.556 ms - 2024-03-23T11:19:50.692Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.091 ms - 2024-03-23T11:19:50.696Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.767 ms - 2024-03-23T11:19:50.700Z
+
+GET /stats/stats/json/conti 200 88.782 ms - 2024-03-23T11:20:05.756Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 16.227 ms - 2024-03-23T11:20:05.775Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.500 ms - 2024-03-23T11:20:05.781Z
+
+GET /stats/stats/json/conti 200 53.191 ms - 2024-03-23T11:20:20.722Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.227 ms - 2024-03-23T11:20:20.725Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.111 ms - 2024-03-23T11:20:20.731Z
+
+GET /stats/stats/json/conti 200 45.355 ms - 2024-03-23T11:20:35.729Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.840 ms - 2024-03-23T11:20:35.733Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.630 ms - 2024-03-23T11:20:35.738Z
+
+GET /stats/stats/json/conti 200 80.395 ms - 2024-03-23T11:20:50.773Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 18.803 ms - 2024-03-23T11:20:50.794Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.442 ms - 2024-03-23T11:20:50.799Z
+
+GET /stats/stats/json/conti 200 32.941 ms - 2024-03-23T11:21:05.728Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.503 ms - 2024-03-23T11:21:05.732Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.526 ms - 2024-03-23T11:21:05.737Z
+
+GET /stats/stats/json/conti 200 67.904 ms - 2024-03-23T11:21:20.770Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 17.423 ms - 2024-03-23T11:21:20.790Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.455 ms - 2024-03-23T11:21:20.794Z
+
+GET /stats/stats/json/conti 200 93.916 ms - 2024-03-23T11:21:50.809Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 15.065 ms - 2024-03-23T11:21:50.827Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.272 ms - 2024-03-23T11:21:50.831Z
+
+GET /stats/stats/json/conti 200 78.221 ms - 2024-03-23T11:22:05.813Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 17.646 ms - 2024-03-23T11:22:05.834Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.471 ms - 2024-03-23T11:22:05.839Z
+
+GET /stats/stats/json/conti 200 40.295 ms - 2024-03-23T11:22:20.776Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.284 ms - 2024-03-23T11:22:20.781Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.358 ms - 2024-03-23T11:22:20.785Z
+
+POST /health/bot 200 188.744 ms - 2024-03-23T11:22:28.390Z
+
+GET /stats/stats/json/conti 200 64.659 ms - 2024-03-23T11:22:35.805Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.609 ms - 2024-03-23T11:22:35.810Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.877 ms - 2024-03-23T11:22:35.815Z
+
+GET /stats/stats/json/conti 200 102.390 ms - 2024-03-23T11:22:50.860Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 17.805 ms - 2024-03-23T11:22:50.881Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.307 ms - 2024-03-23T11:22:50.885Z
+
+GET /stats/stats/json/conti 200 64.781 ms - 2024-03-23T11:23:05.828Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.449 ms - 2024-03-23T11:23:05.832Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.623 ms - 2024-03-23T11:23:05.837Z
+
+GET /stats/stats/json/conti 200 80.479 ms - 2024-03-23T11:23:35.863Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 16.648 ms - 2024-03-23T11:23:35.882Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.228 ms - 2024-03-23T11:23:35.886Z
+
+GET /stats/stats/json/conti 200 43.256 ms - 2024-03-23T11:23:50.831Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.615 ms - 2024-03-23T11:23:50.835Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.416 ms - 2024-03-23T11:23:50.840Z
+
+GET /stats/stats/json/conti 200 79.442 ms - 2024-03-23T11:24:05.873Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 17.253 ms - 2024-03-23T11:24:05.893Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.308 ms - 2024-03-23T11:24:05.897Z
+
+GET /stats/stats/json/conti 200 69.908 ms - 2024-03-23T11:24:20.866Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 16.793 ms - 2024-03-23T11:24:20.886Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.497 ms - 2024-03-23T11:24:20.890Z
+
+GET /stats/stats/json/conti 200 48.200 ms - 2024-03-23T11:24:35.849Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.439 ms - 2024-03-23T11:24:35.853Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.083 ms - 2024-03-23T11:24:35.857Z
+
+GET /stats/stats/json/conti 200 46.998 ms - 2024-03-23T11:24:50.859Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.466 ms - 2024-03-23T11:24:50.864Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 1.802 ms - 2024-03-23T11:24:50.867Z
+
+GET /stats/stats/json/conti 200 42.843 ms - 2024-03-23T11:25:05.867Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.860 ms - 2024-03-23T11:25:05.872Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.469 ms - 2024-03-23T11:25:05.876Z
+
+POST /health/bot 200 280.788 ms - 2024-03-23T11:25:08.487Z
+
+GET /stats/stats/json/conti 200 49.052 ms - 2024-03-23T11:25:20.876Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.039 ms - 2024-03-23T11:25:20.881Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 1.670 ms - 2024-03-23T11:25:20.885Z
+
+GET /stats/stats/json/conti 200 82.285 ms - 2024-03-23T11:25:35.923Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 18.960 ms - 2024-03-23T11:25:35.945Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.457 ms - 2024-03-23T11:25:35.949Z
+
+GET /stats/stats/json/conti 200 67.416 ms - 2024-03-23T11:25:50.917Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.502 ms - 2024-03-23T11:25:50.921Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.489 ms - 2024-03-23T11:25:50.926Z
+
+GET /stats/stats/json/conti 200 85.027 ms - 2024-03-23T11:26:05.951Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 13.874 ms - 2024-03-23T11:26:05.967Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.441 ms - 2024-03-23T11:26:05.972Z
+
+GET /stats/stats/json/conti 200 56.911 ms - 2024-03-23T11:26:20.924Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.885 ms - 2024-03-23T11:26:20.929Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.613 ms - 2024-03-23T11:26:20.934Z
+
+GET /stats/stats/json/conti 200 93.451 ms - 2024-03-23T11:26:35.978Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 18.476 ms - 2024-03-23T11:26:35.999Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.358 ms - 2024-03-23T11:26:36.012Z
+
+GET /stats/stats/json/conti 200 75.107 ms - 2024-03-23T11:26:50.964Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 15.241 ms - 2024-03-23T11:26:50.983Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.174 ms - 2024-03-23T11:26:50.987Z
+
+GET /stats/stats/json/conti 200 56.573 ms - 2024-03-23T11:27:05.955Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.678 ms - 2024-03-23T11:27:05.960Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 1.956 ms - 2024-03-23T11:27:05.964Z
+
+GET /stats/stats/json/conti 200 50.437 ms - 2024-03-23T11:27:20.952Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.851 ms - 2024-03-23T11:27:20.958Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.983 ms - 2024-03-23T11:27:20.963Z
+
+GET /stats/stats/json/conti 200 66.964 ms - 2024-03-23T11:27:35.976Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.418 ms - 2024-03-23T11:27:35.980Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.215 ms - 2024-03-23T11:27:35.985Z
+
+POST /health/bot 200 223.623 ms - 2024-03-23T11:27:48.446Z
+
+GET /stats/stats/json/conti 200 37.122 ms - 2024-03-23T11:27:50.958Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 14.876 ms - 2024-03-23T11:27:50.975Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.506 ms - 2024-03-23T11:27:50.979Z
+
+GET /stats/stats/json/conti 200 49.790 ms - 2024-03-23T11:28:05.975Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.451 ms - 2024-03-23T11:28:05.980Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.158 ms - 2024-03-23T11:28:05.984Z
+
+GET /stats/stats/json/conti 200 73.218 ms - 2024-03-23T11:28:21.005Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 15.175 ms - 2024-03-23T11:28:21.022Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.462 ms - 2024-03-23T11:28:21.028Z
+
+GET /stats/stats/json/conti 200 45.111 ms - 2024-03-23T11:28:35.978Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.902 ms - 2024-03-23T11:28:35.982Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.577 ms - 2024-03-23T11:28:35.987Z
+
+GET /stats/stats/json/conti 200 47.586 ms - 2024-03-23T11:28:50.994Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.366 ms - 2024-03-23T11:28:51.000Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.784 ms - 2024-03-23T11:28:51.005Z
+
+GET /stats/stats/json/conti 200 71.375 ms - 2024-03-23T11:29:06.027Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 17.184 ms - 2024-03-23T11:29:06.047Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.399 ms - 2024-03-23T11:29:06.051Z
+
+GET /stats/stats/json/conti 200 53.849 ms - 2024-03-23T11:29:21.009Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.392 ms - 2024-03-23T11:29:21.013Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.037 ms - 2024-03-23T11:29:21.018Z
+
+GET /stats/stats/json/conti 200 55.309 ms - 2024-03-23T11:29:36.019Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.571 ms - 2024-03-23T11:29:36.024Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.283 ms - 2024-03-23T11:29:36.028Z
+
+GET /stats/stats/json/conti 200 42.098 ms - 2024-03-23T11:29:51.011Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.286 ms - 2024-03-23T11:29:51.015Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.696 ms - 2024-03-23T11:29:51.020Z
+
+GET /stats/stats/json/conti 200 78.895 ms - 2024-03-23T11:30:06.065Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 14.583 ms - 2024-03-23T11:30:06.083Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.210 ms - 2024-03-23T11:30:06.087Z
+
+GET /stats/stats/json/conti 200 47.411 ms - 2024-03-23T11:30:21.036Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.312 ms - 2024-03-23T11:30:21.042Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.249 ms - 2024-03-23T11:30:21.047Z
+
+POST /health/bot 200 242.270 ms - 2024-03-23T11:30:28.472Z
+
+GET /stats/stats/json/conti 200 44.968 ms - 2024-03-23T11:30:36.044Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.623 ms - 2024-03-23T11:30:36.050Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.523 ms - 2024-03-23T11:30:36.056Z
+
+GET /stats/stats/json/conti 200 37.187 ms - 2024-03-23T11:30:51.040Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.272 ms - 2024-03-23T11:30:51.044Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.463 ms - 2024-03-23T11:30:51.049Z
+
+GET /stats/stats/json/conti 200 56.582 ms - 2024-03-23T11:31:06.074Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.101 ms - 2024-03-23T11:31:06.078Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.670 ms - 2024-03-23T11:31:06.082Z
+
+GET /stats/stats/json/conti 200 41.284 ms - 2024-03-23T11:31:21.064Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.363 ms - 2024-03-23T11:31:21.070Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.513 ms - 2024-03-23T11:31:21.075Z
+
+GET /stats/stats/json/conti 200 69.169 ms - 2024-03-23T11:31:51.115Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 18.630 ms - 2024-03-23T11:31:51.136Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.248 ms - 2024-03-23T11:31:51.140Z
+
+GET /stats/stats/json/conti 200 78.903 ms - 2024-03-23T11:32:21.153Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 15.832 ms - 2024-03-23T11:32:21.171Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.101 ms - 2024-03-23T11:32:21.175Z
+
+GET /stats/stats/json/conti 200 41.506 ms - 2024-03-23T11:32:36.119Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.636 ms - 2024-03-23T11:32:36.134Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.829 ms - 2024-03-23T11:32:36.140Z
+
+GET /stats/stats/json/conti 200 41.308 ms - 2024-03-23T11:32:51.126Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.072 ms - 2024-03-23T11:32:51.131Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.180 ms - 2024-03-23T11:32:51.135Z
+
+GET /stats/stats/json/conti 200 73.272 ms - 2024-03-23T11:33:06.168Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 15.883 ms - 2024-03-23T11:33:06.186Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 4.054 ms - 2024-03-23T11:33:06.193Z
+
+POST /health/bot 200 195.841 ms - 2024-03-23T11:33:08.437Z
+
+GET /stats/stats/json/conti 200 74.993 ms - 2024-03-23T11:33:21.177Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 15.240 ms - 2024-03-23T11:33:21.195Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.653 ms - 2024-03-23T11:33:21.201Z
+
+GET /stats/stats/json/conti 200 72.021 ms - 2024-03-23T11:33:36.181Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 14.570 ms - 2024-03-23T11:33:36.198Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.708 ms - 2024-03-23T11:33:36.204Z
+
+GET /stats/stats/json/conti 200 48.133 ms - 2024-03-23T11:33:51.162Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.540 ms - 2024-03-23T11:33:51.167Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.495 ms - 2024-03-23T11:33:51.172Z
+
+GET /stats/stats/json/conti 200 81.141 ms - 2024-03-23T11:34:21.202Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 16.376 ms - 2024-03-23T11:34:21.221Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.566 ms - 2024-03-23T11:34:21.225Z
+
+GET /stats/stats/json/conti 200 44.629 ms - 2024-03-23T11:34:36.166Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.207 ms - 2024-03-23T11:34:36.170Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.762 ms - 2024-03-23T11:34:36.175Z
+
+GET /stats/stats/json/conti 200 69.455 ms - 2024-03-23T11:34:51.195Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 14.693 ms - 2024-03-23T11:34:51.212Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.626 ms - 2024-03-23T11:34:51.217Z
+
+GET /stats/stats/json/conti 200 83.043 ms - 2024-03-23T11:35:06.221Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 16.924 ms - 2024-03-23T11:35:06.241Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.369 ms - 2024-03-23T11:35:06.246Z
+
+GET /stats/stats/json/conti 200 62.113 ms - 2024-03-23T11:35:21.197Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.107 ms - 2024-03-23T11:35:21.202Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.954 ms - 2024-03-23T11:35:21.207Z
+
+GET /stats/stats/json/conti 200 91.587 ms - 2024-03-23T11:35:36.235Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 19.056 ms - 2024-03-23T11:35:36.257Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.550 ms - 2024-03-23T11:35:36.261Z
+
+POST /health/bot 200 253.332 ms - 2024-03-23T11:35:48.512Z
+
+GET /stats/stats/json/conti 200 44.768 ms - 2024-03-23T11:35:51.206Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 14.382 ms - 2024-03-23T11:35:51.223Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.613 ms - 2024-03-23T11:35:51.227Z
+
+GET /stats/stats/json/conti 200 50.060 ms - 2024-03-23T11:36:06.216Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.826 ms - 2024-03-23T11:36:06.221Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.264 ms - 2024-03-23T11:36:06.226Z
+
+GET /stats/stats/json/conti 200 38.767 ms - 2024-03-23T11:36:21.211Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 4.992 ms - 2024-03-23T11:36:21.220Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 4.502 ms - 2024-03-23T11:36:21.229Z
+
+GET /stats/stats/json/conti 200 48.396 ms - 2024-03-23T11:36:36.228Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.125 ms - 2024-03-23T11:36:36.232Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.383 ms - 2024-03-23T11:36:36.236Z
+
+GET /stats/stats/json/conti 200 45.854 ms - 2024-03-23T11:36:51.237Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.512 ms - 2024-03-23T11:36:51.242Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.212 ms - 2024-03-23T11:36:51.247Z
+
+GET /stats/stats/json/conti 200 32.865 ms - 2024-03-23T11:37:06.230Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.269 ms - 2024-03-23T11:37:06.234Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 1.888 ms - 2024-03-23T11:37:06.237Z
+
+GET /stats/stats/json/conti 200 35.295 ms - 2024-03-23T11:37:21.235Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.680 ms - 2024-03-23T11:37:21.239Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.197 ms - 2024-03-23T11:37:21.243Z
+
+GET /stats/stats/json/conti 200 45.553 ms - 2024-03-23T11:37:36.255Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.741 ms - 2024-03-23T11:37:36.260Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 1.925 ms - 2024-03-23T11:37:36.264Z
+
+GET /stats/stats/json/conti 200 38.820 ms - 2024-03-23T11:37:51.252Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.129 ms - 2024-03-23T11:37:51.256Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 1.898 ms - 2024-03-23T11:37:51.260Z
+
+GET /stats/stats/json/conti 200 38.694 ms - 2024-03-23T11:38:06.259Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.037 ms - 2024-03-23T11:38:06.263Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.279 ms - 2024-03-23T11:38:06.267Z
+
+GET /stats/stats/json/conti 200 32.133 ms - 2024-03-23T11:38:21.264Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.016 ms - 2024-03-23T11:38:21.268Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 1.920 ms - 2024-03-23T11:38:21.273Z
+
+POST /health/bot 200 200.434 ms - 2024-03-23T11:38:28.465Z
+
+GET /stats/stats/json/conti 200 37.675 ms - 2024-03-23T11:38:36.276Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.138 ms - 2024-03-23T11:38:36.280Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.283 ms - 2024-03-23T11:38:36.284Z
+
+GET /stats/stats/json/conti 200 44.224 ms - 2024-03-23T11:38:51.292Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 1.844 ms - 2024-03-23T11:38:51.296Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.596 ms - 2024-03-23T11:38:51.300Z
+
+GET /stats/stats/json/conti 200 46.692 ms - 2024-03-23T11:39:06.304Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.358 ms - 2024-03-23T11:39:06.309Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 1.895 ms - 2024-03-23T11:39:06.313Z
+
+GET /stats/stats/json/conti 200 43.124 ms - 2024-03-23T11:39:21.305Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.785 ms - 2024-03-23T11:39:21.309Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.349 ms - 2024-03-23T11:39:21.314Z
+
+GET /stats/stats/json/conti 200 36.055 ms - 2024-03-23T11:39:36.300Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.467 ms - 2024-03-23T11:39:36.306Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.273 ms - 2024-03-23T11:39:36.310Z
+
+GET /stats/stats/json/conti 200 40.805 ms - 2024-03-23T11:39:51.318Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.153 ms - 2024-03-23T11:39:51.322Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 1.884 ms - 2024-03-23T11:39:51.326Z
+
+GET /stats/stats/json/conti 200 45.712 ms - 2024-03-23T11:40:06.331Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 1.961 ms - 2024-03-23T11:40:06.335Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.396 ms - 2024-03-23T11:40:06.339Z
+
+GET /stats/stats/json/conti 200 49.245 ms - 2024-03-23T11:40:21.346Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.534 ms - 2024-03-23T11:40:21.350Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 1.971 ms - 2024-03-23T11:40:21.354Z
+
+GET /stats/stats/json/conti 200 34.996 ms - 2024-03-23T11:40:36.346Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.043 ms - 2024-03-23T11:40:36.350Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.108 ms - 2024-03-23T11:40:36.360Z
+
+GET /stats/stats/json/conti 200 41.606 ms - 2024-03-23T11:40:51.357Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.944 ms - 2024-03-23T11:40:51.362Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.390 ms - 2024-03-23T11:40:51.367Z
+
+GET /stats/stats/json/conti 200 37.932 ms - 2024-03-23T11:41:06.360Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.101 ms - 2024-03-23T11:41:06.365Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.654 ms - 2024-03-23T11:41:06.369Z
+
+POST /health/bot 200 248.934 ms - 2024-03-23T11:41:08.528Z
+
+GET /stats/stats/json/conti 200 35.429 ms - 2024-03-23T11:41:21.368Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.332 ms - 2024-03-23T11:41:21.373Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.096 ms - 2024-03-23T11:41:21.376Z
+
+GET /stats/stats/json/conti 200 44.113 ms - 2024-03-23T11:41:36.377Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.154 ms - 2024-03-23T11:41:36.381Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.588 ms - 2024-03-23T11:41:36.386Z
+
+GET /stats/stats/json/conti 200 34.245 ms - 2024-03-23T11:41:51.378Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.040 ms - 2024-03-23T11:41:51.382Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.348 ms - 2024-03-23T11:41:51.385Z
+
+GET /stats/stats/json/conti 200 31.964 ms - 2024-03-23T11:42:06.386Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 4.307 ms - 2024-03-23T11:42:06.392Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.169 ms - 2024-03-23T11:42:06.396Z
+
+GET /stats/stats/json/conti 200 35.296 ms - 2024-03-23T11:42:21.403Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 1.915 ms - 2024-03-23T11:42:21.407Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 1.782 ms - 2024-03-23T11:42:21.410Z
+
+GET /stats/stats/json/conti 200 47.677 ms - 2024-03-23T11:42:36.418Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.154 ms - 2024-03-23T11:42:36.422Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.565 ms - 2024-03-23T11:42:36.427Z
+
+GET /stats/stats/json/conti 200 49.661 ms - 2024-03-23T11:42:51.425Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 1.939 ms - 2024-03-23T11:42:51.429Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.288 ms - 2024-03-23T11:42:51.432Z
+
+GET /stats/stats/json/conti 200 88.090 ms - 2024-03-23T11:43:06.472Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 18.966 ms - 2024-03-23T11:43:06.493Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.673 ms - 2024-03-23T11:43:06.499Z
+
+GET /stats/stats/json/conti 200 36.123 ms - 2024-03-23T11:43:21.427Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.607 ms - 2024-03-23T11:43:21.432Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.296 ms - 2024-03-23T11:43:21.436Z
+
+GET /stats/stats/json/conti 200 84.418 ms - 2024-03-23T11:43:36.487Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 17.567 ms - 2024-03-23T11:43:36.507Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.246 ms - 2024-03-23T11:43:36.511Z
+
+POST /health/bot 200 234.306 ms - 2024-03-23T11:43:48.517Z
+
+GET /stats/stats/json/conti 200 41.622 ms - 2024-03-23T11:43:51.455Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 17.064 ms - 2024-03-23T11:43:51.474Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.471 ms - 2024-03-23T11:43:51.479Z
+
+GET /stats/stats/json/conti 200 44.178 ms - 2024-03-23T11:44:06.461Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.466 ms - 2024-03-23T11:44:06.466Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.203 ms - 2024-03-23T11:44:06.470Z
+
+GET /stats/stats/json/conti 200 46.993 ms - 2024-03-23T11:44:21.467Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.909 ms - 2024-03-23T11:44:21.472Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.182 ms - 2024-03-23T11:44:21.476Z
+
+GET /stats/stats/json/conti 200 37.230 ms - 2024-03-23T11:44:36.464Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.536 ms - 2024-03-23T11:44:36.468Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.812 ms - 2024-03-23T11:44:36.481Z
+
+GET /stats/stats/json/conti 200 43.226 ms - 2024-03-23T11:44:51.484Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.009 ms - 2024-03-23T11:44:51.489Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.537 ms - 2024-03-23T11:44:51.494Z
+
+GET /stats/stats/json/conti 200 85.970 ms - 2024-03-23T11:45:06.535Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 14.211 ms - 2024-03-23T11:45:06.551Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.604 ms - 2024-03-23T11:45:06.557Z
+
+GET /stats/stats/json/conti 200 86.584 ms - 2024-03-23T11:45:21.535Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 17.562 ms - 2024-03-23T11:45:21.555Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.206 ms - 2024-03-23T11:45:21.559Z
+
+GET /stats/stats/json/conti 200 65.121 ms - 2024-03-23T11:45:36.526Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 15.286 ms - 2024-03-23T11:45:36.544Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.186 ms - 2024-03-23T11:45:36.548Z
+
+GET /stats/stats/json/conti 200 72.876 ms - 2024-03-23T11:45:51.538Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.476 ms - 2024-03-23T11:45:51.543Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.138 ms - 2024-03-23T11:45:51.547Z
+
+GET /stats/stats/json/conti 200 69.803 ms - 2024-03-23T11:46:06.540Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 19.888 ms - 2024-03-23T11:46:06.562Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.529 ms - 2024-03-23T11:46:06.567Z
+
+GET /stats/stats/json/conti 200 71.264 ms - 2024-03-23T11:46:21.546Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 16.391 ms - 2024-03-23T11:46:21.565Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.459 ms - 2024-03-23T11:46:21.571Z
+
+POST /health/bot 200 259.336 ms - 2024-03-23T11:46:28.540Z
+
+GET /stats/stats/json/conti 200 68.559 ms - 2024-03-23T11:46:36.555Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 21.177 ms - 2024-03-23T11:46:36.579Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.633 ms - 2024-03-23T11:46:36.585Z
+
+GET /stats/stats/json/conti 200 66.401 ms - 2024-03-23T11:46:51.554Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.564 ms - 2024-03-23T11:46:51.559Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.817 ms - 2024-03-23T11:46:51.563Z
+
+GET /stats/stats/json/conti 200 38.537 ms - 2024-03-23T11:47:06.528Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.445 ms - 2024-03-23T11:47:06.532Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.154 ms - 2024-03-23T11:47:06.536Z
+
+GET /stats/stats/json/conti 200 59.461 ms - 2024-03-23T11:47:21.561Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.285 ms - 2024-03-23T11:47:21.566Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 1.936 ms - 2024-03-23T11:47:21.570Z
+
+GET /stats/stats/json/conti 200 40.142 ms - 2024-03-23T11:47:36.554Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.210 ms - 2024-03-23T11:47:36.558Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.201 ms - 2024-03-23T11:47:36.563Z
+
+GET /stats/stats/json/conti 200 35.227 ms - 2024-03-23T11:47:51.555Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.599 ms - 2024-03-23T11:47:51.560Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.374 ms - 2024-03-23T11:47:51.565Z
+
+GET /stats/stats/json/conti 200 35.546 ms - 2024-03-23T11:48:06.560Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.729 ms - 2024-03-23T11:48:06.566Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 1.923 ms - 2024-03-23T11:48:06.570Z
+
+GET /stats/stats/json/conti 200 82.281 ms - 2024-03-23T11:48:21.613Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 15.586 ms - 2024-03-23T11:48:21.632Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.056 ms - 2024-03-23T11:48:21.636Z
+
+GET /stats/stats/json/conti 200 42.928 ms - 2024-03-23T11:48:36.585Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.120 ms - 2024-03-23T11:48:36.591Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.508 ms - 2024-03-23T11:48:36.597Z
+
+GET /stats/stats/json/conti 200 74.546 ms - 2024-03-23T11:48:51.626Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 22.737 ms - 2024-03-23T11:48:51.651Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.082 ms - 2024-03-23T11:48:51.657Z
+
+GET /auth/token 404 2.001 ms - 2024-03-23T11:48:59.436Z
+
+GET /stats/stats/json/conti 200 45.415 ms - 2024-03-23T11:49:06.598Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 4.677 ms - 2024-03-23T11:49:06.605Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.353 ms - 2024-03-23T11:49:06.610Z
+
+POST /health/bot 200 235.246 ms - 2024-03-23T11:49:08.517Z
+
+POST /auth/token 500 169.864 ms - 2024-03-23T11:49:11.445Z
+
+GET /stats/stats/json/conti 200 42.642 ms - 2024-03-23T11:49:21.602Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.947 ms - 2024-03-23T11:49:21.608Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.716 ms - 2024-03-23T11:49:21.613Z
+
+GET /stats/stats/json/conti 200 41.571 ms - 2024-03-23T11:49:36.604Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.781 ms - 2024-03-23T11:49:36.609Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.029 ms - 2024-03-23T11:49:36.612Z
+
+GET /stats/stats/json/conti 200 44.545 ms - 2024-03-23T11:49:51.609Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.553 ms - 2024-03-23T11:49:51.614Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.078 ms - 2024-03-23T11:49:51.617Z
+
+GET /stats/stats/json/conti 200 42.164 ms - 2024-03-23T11:50:06.610Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.372 ms - 2024-03-23T11:50:06.615Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.324 ms - 2024-03-23T11:50:06.618Z
+
+GET /stats/stats/json/conti 200 95.937 ms - 2024-03-23T11:50:21.668Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 21.856 ms - 2024-03-23T11:50:21.693Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 5.146 ms - 2024-03-23T11:50:21.703Z
+
+GET /stats/stats/json/conti 200 49.110 ms - 2024-03-23T11:50:36.631Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.872 ms - 2024-03-23T11:50:36.636Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.640 ms - 2024-03-23T11:50:36.640Z
+
+GET /stats/stats/json/conti 200 39.926 ms - 2024-03-23T11:50:51.632Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.473 ms - 2024-03-23T11:50:51.636Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.315 ms - 2024-03-23T11:50:51.640Z
+
+GET /stats/stats/json/conti 200 76.012 ms - 2024-03-23T11:51:06.675Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 15.925 ms - 2024-03-23T11:51:06.694Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.199 ms - 2024-03-23T11:51:06.698Z
+
+GET /stats/stats/json/conti 200 47.384 ms - 2024-03-23T11:51:21.649Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 12.092 ms - 2024-03-23T11:51:21.663Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.650 ms - 2024-03-23T11:51:21.668Z
+
+GET /stats/stats/json/conti 200 47.571 ms - 2024-03-23T11:51:36.662Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.394 ms - 2024-03-23T11:51:36.675Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.094 ms - 2024-03-23T11:51:36.679Z
+
+POST /health/bot 200 254.340 ms - 2024-03-23T11:51:48.553Z
+
+GET /stats/stats/json/conti 200 48.968 ms - 2024-03-23T11:51:51.669Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 15.592 ms - 2024-03-23T11:51:51.687Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.233 ms - 2024-03-23T11:51:51.691Z
+
+GET /stats/stats/json/conti 200 65.670 ms - 2024-03-23T11:52:06.685Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.284 ms - 2024-03-23T11:52:06.689Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.972 ms - 2024-03-23T11:52:06.694Z
+
+GET /stats/stats/json/conti 200 35.642 ms - 2024-03-23T11:52:21.662Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.724 ms - 2024-03-23T11:52:21.667Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.373 ms - 2024-03-23T11:52:21.672Z
+
+GET /stats/stats/json/conti 200 76.877 ms - 2024-03-23T11:52:51.716Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 16.408 ms - 2024-03-23T11:52:51.735Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.544 ms - 2024-03-23T11:52:51.740Z
+
+GET /stats/stats/json/conti 200 47.820 ms - 2024-03-23T11:53:06.691Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.611 ms - 2024-03-23T11:53:06.696Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 4.038 ms - 2024-03-23T11:53:06.702Z
+
+GET /stats/stats/json/conti 200 77.346 ms - 2024-03-23T11:53:21.728Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 18.015 ms - 2024-03-23T11:53:21.748Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.530 ms - 2024-03-23T11:53:21.754Z
+
+GET /stats/stats/json/conti 200 49.490 ms - 2024-03-23T11:53:36.701Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 3.158 ms - 2024-03-23T11:53:36.706Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.240 ms - 2024-03-23T11:53:36.712Z
+
+GET /stats/stats/json/conti 200 76.103 ms - 2024-03-23T11:53:51.738Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 16.290 ms - 2024-03-23T11:53:51.757Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.450 ms - 2024-03-23T11:53:51.761Z
+
+GET /stats/stats/json/conti 200 54.561 ms - 2024-03-23T11:54:06.728Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.821 ms - 2024-03-23T11:54:06.734Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.407 ms - 2024-03-23T11:54:06.738Z
+
+GET /stats/stats/json/conti 200 111.758 ms - 2024-03-23T11:54:21.798Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 16.727 ms - 2024-03-23T11:54:21.817Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.737 ms - 2024-03-23T11:54:21.824Z
+
+POST /health/bot 200 231.775 ms - 2024-03-23T11:54:28.532Z
+
+GET /stats/stats/json/conti 200 43.522 ms - 2024-03-23T11:54:36.731Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.614 ms - 2024-03-23T11:54:36.737Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.794 ms - 2024-03-23T11:54:36.742Z
+
+GET /stats/stats/json/conti 200 39.718 ms - 2024-03-23T11:54:51.736Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.284 ms - 2024-03-23T11:54:51.740Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.328 ms - 2024-03-23T11:54:51.745Z
+
+GET /stats/stats/json/conti 200 34.077 ms - 2024-03-23T11:55:06.741Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.331 ms - 2024-03-23T11:55:06.755Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.528 ms - 2024-03-23T11:55:06.760Z
+
+GET /stats/stats/json/conti 200 83.310 ms - 2024-03-23T11:55:21.801Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 18.994 ms - 2024-03-23T11:55:21.823Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.514 ms - 2024-03-23T11:55:21.827Z
+
+GET /stats/stats/json/conti 200 70.123 ms - 2024-03-23T11:55:36.803Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 16.092 ms - 2024-03-23T11:55:36.822Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 3.274 ms - 2024-03-23T11:55:36.828Z
+
+GET /stats/stats/json/conti 200 38.133 ms - 2024-03-23T11:55:51.783Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.726 ms - 2024-03-23T11:55:51.788Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.762 ms - 2024-03-23T11:55:51.792Z
+
+GET /stats/stats/json/conti 200 50.314 ms - 2024-03-23T11:56:06.807Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.935 ms - 2024-03-23T11:56:06.812Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 1.901 ms - 2024-03-23T11:56:06.816Z
+
+GET /stats/stats/json/conti 200 75.376 ms - 2024-03-23T11:56:21.836Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 15.004 ms - 2024-03-23T11:56:21.853Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.279 ms - 2024-03-23T11:56:21.857Z
+
+GET /stats/stats/json/conti 200 90.243 ms - 2024-03-23T11:56:51.864Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 16.263 ms - 2024-03-23T11:56:51.882Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.457 ms - 2024-03-23T11:56:51.887Z
+
+GET /stats/stats/json/conti 200 48.915 ms - 2024-03-23T11:57:06.829Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 2.525 ms - 2024-03-23T11:57:06.834Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.984 ms - 2024-03-23T11:57:06.839Z
+
+POST /health/bot 200 277.064 ms - 2024-03-23T11:57:08.586Z
+
+GET /stats/stats/json/conti 200 71.965 ms - 2024-03-23T11:57:21.861Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 17.394 ms - 2024-03-23T11:57:21.881Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.249 ms - 2024-03-23T11:57:21.886Z
+
+GET /stats/stats/json/conti 200 77.583 ms - 2024-03-23T11:57:36.879Z
+
+GET /stats/stats/service?codeMetier=BCSO 200 16.848 ms - 2024-03-23T11:57:36.899Z
+
+GET /stats/stats/service?codeMetier=LSPD 200 2.231 ms - 2024-03-23T11:57:36.904Z
+

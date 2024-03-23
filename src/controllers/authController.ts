@@ -4,6 +4,7 @@ import axios from "axios";
 import {CriticalError} from "../utils/CustomError";
 import memberService from "../services/memberService";
 import jwt from "jsonwebtoken"
+import {logger} from "../syslog/logger";
 
 const router = express.Router()
 
@@ -11,7 +12,6 @@ const router = express.Router()
 
 router.post('/token', async (req: Request, res: Response, next: NextFunction) => {
     const {code} = req.body;
-
     try {
         const response = await axios.post('https://discord.com/api/oauth2/token',
             `client_id=${encodeURIComponent(process.env.DISCORD_CLIENT!)}&` +
@@ -24,11 +24,6 @@ router.post('/token', async (req: Request, res: Response, next: NextFunction) =>
                     'Content-Type': 'application/x-www-form-urlencoded'
                 }
             });
-
-        console.log(response.status)
-        console.log(response?.data)
-
-
         if (response.status === 200 || response.status === 204) {
             const accessToken = response.data.access_token;
             try {
@@ -37,8 +32,6 @@ router.post('/token', async (req: Request, res: Response, next: NextFunction) =>
                         Authorization: `Bearer ${accessToken}`
                     }
                 });
-
-
                 const discordId = userResponse.data.id;
                 const user = await memberService.getMemberById(discordId)
                 if (user && user.etatMajor) {
@@ -49,8 +42,6 @@ router.post('/token', async (req: Request, res: Response, next: NextFunction) =>
                         maxAge: 24 * 60 * 60 * 1000,
                         sameSite: "lax"
                     })
-                    console.log(jwtToken)
-
                     res.json({
                         accessToken,
                         refreshToken: response.data.refresh_token,
@@ -58,14 +49,13 @@ router.post('/token', async (req: Request, res: Response, next: NextFunction) =>
                         user
                     });
                 } else {
-
+                    logger.error("Cette accès est interdit.")
                     return res.status(403)
                 }
 
 
             } catch (userError) {
-
-                console.error('Error fetching user from Discord:', userError);
+               logger.error('Error fetching user from Discord:' +  userError);
                 next(userError)
 
             }
@@ -74,6 +64,7 @@ router.post('/token', async (req: Request, res: Response, next: NextFunction) =>
 
 
     } catch (error) {
+        logger.error("Impossible d'changer le code contre un token.")
         next(new CriticalError("Impossible d'échanger le code contre un token."));
     }
 })
@@ -102,7 +93,7 @@ router.get('/logout', async (req: Request, res: Response) => {
         res.clearCookie('jwt');
         res.status(200).json({message: 'Déconnexion réussie'});
     } catch (error) {
-        console.error('Erreur lors de la déconnexion :', error);
+        logger.error('Erreur lors de la déconnexion :'+ error);
         res.status(500).json({message: 'Une erreur est survenue lors de la déconnexion'});
     }
 });
