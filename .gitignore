@@ -4,6 +4,7 @@ nodemon.json
 .idea
 src/Doc
 logs
+config/config.json
 
 
 
