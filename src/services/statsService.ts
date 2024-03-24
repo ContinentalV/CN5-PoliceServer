@@ -64,7 +64,7 @@ const getAllDataProfile = async (metierCode: string): Promise<any> => {
         const [rows] = await connection.query(query, [metierCode]);
         return rows; // Assure le retour des données ou un tableau vide
     } catch (e) {
-        console.error('Error fetching user salary:', e);
+
         throw e;
     } finally {
         connection.release()
@@ -74,9 +74,7 @@ const getAllDataProfile = async (metierCode: string): Promise<any> => {
 
 const getBaseSalarialGrade = async (code: string) => {
     const connection = await pool.getConnection()
-    console.log('from service')
-
-    try {
+        try {
         const query = `SELECT *
                        FROM Roles
                        WHERE codeMetier = ?`;

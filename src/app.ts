@@ -51,7 +51,7 @@ const morganFormatFile = ':method :url :status :response-time ms - :date[iso]\n'
 const morganStream = fs.createWriteStream(path.join(__dirname, '../logs/morgan.log'), { flags: 'a' });
 app.use(morgan(morganFormatConsole));
 app.use(morgan(morganFormatFile, { stream: morganStream }));
-app.use(networkLoggerMiddleware);
+//app.use(networkLoggerMiddleware);
 app.use(responseTimeTracker);
 app.use(express.json());
 app.use(timeout('10s'));

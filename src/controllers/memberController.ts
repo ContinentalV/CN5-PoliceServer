@@ -4,8 +4,7 @@ import memberService from '../services/memberService';
 import {logInfo} from "../utils/functions";
 import {ConflictError, CriticalError, LightError} from "../utils/CustomError";
 import {IUser} from "../entities/Member";
-//TODO joi ou express validator pour typer req.body
-//Todo ajouter des interface pour req.body
+
 const router = express.Router();
 
 

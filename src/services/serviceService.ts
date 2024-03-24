@@ -14,8 +14,6 @@ const isUserInService = async (discordAgentId: string): Promise<IService | null>
     try {
         const [rows]: [RowDataPacket[] | ResultSetHeader | RowDataPacket[][]] =
             await connection.query(query, [discordAgentId]) as unknown as [RowDataPacket[]];
-
-        // Nous vérifions que rows est bien un tableau et qu'il contient au moins un élément
         return rows.length > 0 ? rows[0] as IService : null;
     } catch (e) {
         throw e
@@ -26,9 +24,7 @@ const isUserInService = async (discordAgentId: string): Promise<IService | null>
 }
 const startService = async (discordAgentId: string, PDS: Date) => {
     const connection: PoolConnection = await pool.getConnection()
-
     try {
-
         const query = `UPDATE services
                        SET PDS         = ?,
                            serviceIsOn = ?
@@ -46,7 +42,6 @@ const startService = async (discordAgentId: string, PDS: Date) => {
 const endService = async (discordAgentId: string, FDS: Date): Promise<void> => {
     const connection: PoolConnection = await pool.getConnection();
     await connection.beginTransaction();
-
     try {
         // Mise à jour de FDS et serviceIsOn
         let query = `UPDATE services
@@ -54,8 +49,6 @@ const endService = async (discordAgentId: string, FDS: Date): Promise<void> => {
                          serviceIsOn = ?
                      WHERE discordAgentId = ?`;
         await connection.query(query, [FDS, false, discordAgentId]);
-
-        // Sélectionner PDS, FDS, et TOTAL actuel
         query = `SELECT PDS, FDS, TOTAL
                  FROM services
                  WHERE discordAgentId = ?`;
@@ -89,17 +82,11 @@ const manageTimeService = async (targetId: string, temps: number, mode: string):
 
     try {
         await connection.beginTransaction();
-
         let query = 'SELECT TOTAL FROM services WHERE discordAgentId = ?';
-        // Assert the correct full return type of the query
         const [rows]: [RowDataPacket[], FieldPacket[]] = await connection.query(query, [targetId]) as [RowDataPacket[], FieldPacket[]];
-        // Now rows is RowDataPacket[] and you can get the first result
         const service = rows[0] as any; // Cast to any temporarily, adjust as needed based on your actual type
-
         let newTotal = mode === 'add' ? service.TOTAL + temps : service.TOTAL - temps;
-
         if (newTotal < 0) newTotal = 0;
-
         query = 'UPDATE services SET TOTAL = ? WHERE discordAgentId = ?';
         await connection.query(query, [newTotal, targetId]);
         await connection.commit();
@@ -114,7 +101,6 @@ const manageTimeService = async (targetId: string, temps: number, mode: string):
 
 const resetData = async (company: string) => {
     const connection = await pool.getConnection()
-
     try {
         let query = `UPDATE services
             INNER JOIN Users on services.discordAgentId = Users.discordId
@@ -124,7 +110,6 @@ const resetData = async (company: string) => {
                          serviceIsOn   = false,
                          TOTAL         = DEFAULT
                      WHERE Users.codeMetier = ?`
-
         await connection.query(query, [company])
     } catch (e) {
         throw e

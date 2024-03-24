@@ -1,39 +1,53 @@
 import { Request, Response, NextFunction } from 'express';
-import { logger } from "../syslog/logger";
+import { networkLogger } from "../syslog/logger";
+import { format } from 'winston';
+import { LogEntry } from 'winston';
+interface NetworkLogEntry extends LogEntry {
+    message: string;
 
-export function networkLoggerMiddleware(req: Request, res: Response, next: NextFunction) {
+}
+export function networkLoggerMiddleware(req: Request, res: Response, next: NextFunction): void {
     res.on('finish', () => {
-        let clientIP: string = '';
-        if (typeof req.headers['x-real-ip'] === 'string') {
-            clientIP = req.headers['x-real-ip'];
-        } else if (Array.isArray(req.headers['x-real-ip'])) {
-            // Si vous voulez prendre la première adresse IP dans le tableau
-            clientIP = req.headers['x-real-ip'][0];
-        }
 
+        const clientIP: string = typeof req.headers['x-forwarded-for'] === 'string' ? req.headers['x-forwarded-for'] :
+            Array.isArray(req.headers['x-forwarded-for']) ? req.headers['x-forwarded-for'][0] :
+                req.socket.remoteAddress || 'Inconnu';
 
-        const logInfo = {
-            client: determineClient(req), // Implémentez cette fonction selon votre logique
-            ip: clientIP,
-            token: req.headers['authorization']?.split(" ")[1] || req.cookies.jwt,
-            requestURL: req.originalUrl,
-            success: res.statusCode === 200 ? '✅' : '📛',
-            statusCodeResponse: res.statusCode,
-            data: req.body || req.params || "NO DATA",
+        // Gestion sécurisée de la récupération du token
+        const bearerToken: string | undefined = req.headers.authorization?.split(' ')[1];
+        const cookieToken: string | undefined = req.cookies.jwt;
+        const token: string = bearerToken || cookieToken || '';
+        const maskedToken: string = token ? `****${token.slice(-10)}` : 'Aucun token';
+
+        // Logique pour déterminer le client
+        const clientType: string = determineClient(req);
+
+        // Construction de l'objet de log
+        const logInfo:  NetworkLogEntry = {
+            level: 'network',
+            message: JSON.stringify({
+                client: clientType,
+                ip: clientIP,
+                token: maskedToken,
+                requestURL: req.originalUrl,
+                method: req.method,
+                statusCode: res.statusCode,
+                data: req.method === "GET" ? req.query : req.body,
+            })
         };
 
-        logger.network(logInfo.client, clientIP, logInfo.token, logInfo.requestURL, logInfo.success === '✅', logInfo.statusCodeResponse, logInfo.data);
+        networkLogger.log(logInfo);
     });
 
     next();
 }
 
-function determineClient(req: Request): any {
-    if (req.headers['authorization']){
-        return  "BOT";
-    } else if(req.cookies?.jwt){
+// Fonction auxiliaire pour déterminer le type de client
+function determineClient(req: Request): string {
+    if (req.headers.authorization) {
+        return "BOT";
+    } else if (req.cookies && req.cookies.jwt) {
         return "DASHBOARD";
-    } else {
-        return "UNKNOWN";
     }
+    return "UNKNOWN";
 }

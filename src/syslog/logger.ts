@@ -1,35 +1,35 @@
 import { createLogger, format, transports, config } from "winston";
 import chalk from "chalk";
+import { v4 as uuidv4 } from 'uuid';
 
-// Définition du format pour la console avec Chalk
+// Configuration des couleurs avec Chalk pour la console
 const consoleFormat = format.combine(
     format.timestamp({ format: "DD-MM-YYYY | HH:mm:ss" }),
-    format.printf(info => {
+    format.printf((info) => {
         const timestamp = chalk.bgBlack.whiteBright(` ${info.timestamp} `) + chalk.bgGrey.whiteBright('|::|');
         let level = '';
-        let message = '';
+        let message = info.message;
 
         switch (info.level) {
             case 'error':
-            case 'errorDB':
                 level = chalk.bgRedBright.black(` ${info.level.toUpperCase()} `);
-                message = chalk.red(info.message);
-                break;
-            case 'db':
-               level = chalk.bgHex('#e89a00').black.bold(` ${info.level.toUpperCase()} `);
-                message = chalk.red(info.message);
+                message = chalk.red(message);
                 break;
             case 'warn':
                 level = chalk.bgYellowBright.black(` ${info.level.toUpperCase()} `);
-                message = chalk.yellowBright(info.message);
+                message = chalk.yellow(message);
                 break;
             case 'info':
                 level = chalk.bgGreenBright.black(` ${info.level.toUpperCase()} `);
-                message = chalk.greenBright(info.message);
+                message = chalk.green(message);
+                break;
+            case 'db':
+                level = chalk.bgHex('#e89a00').black(` ${info.level.toUpperCase()} `);
+                message = chalk.hex('#e89a00')(message);
                 break;
             default:
-                level = chalk.bgWhiteBright(` ${info.level.toUpperCase()} `);
-                message = chalk.whiteBright(info.message);
+                level = chalk.bgWhite(` ${info.level.toUpperCase()} `);
+                message = chalk.white(message);
                 break;
         }
 
@@ -37,83 +37,62 @@ const consoleFormat = format.combine(
     })
 );
 
-// Définition du format pour les fichiers sans Chalk
+// Format standard pour les fichiers (sans Chalk)
 const fileFormat = format.combine(
     format.timestamp({ format: "DD-MM-YYYY | HH:mm:ss" }),
     format.printf(info => `${info.timestamp} |::| ${info.level} |::| ${info.message}`)
 );
 
-// Définition du format pour les fichiers réseau
-const fileNetworkFormat = format.combine(
-    format.timestamp({ format: "DD-MM-YYYY | HH:mm:ss" }),
-    format.printf(info => `${info.timestamp} |::| NETWORK |::| ${info.message}`) // Utilisez NETWORK comme tag
-);
+// Niveaux de journalisation personnalisés
+config.addColors({
+    error: 'red',
+    warn: 'yellow',
+    info: 'green',
+    db: 'orange',
+    http: 'blue',
+    network: 'magenta'
+});
 
-// Définition des niveaux de journalisation personnalisés
-const customLevels = {
-    levels: {
-        db:-1,
-        error: 0,
-        warn: 1,
-        info: 2,
-        http: 3, // Ajoutez le niveau 'http'
-        network: 4 // Ajoutez le niveau 'network'
-    },
-    colors: {
-        db: 'orange',
-        error: 'red',
-        warn: 'yellow',
-        info: 'green',
-        http: 'blue', // Définissez une couleur pour le niveau 'http' (facultatif)
-        network: 'magenta' // Définissez une couleur pour le niveau 'network' (facultatif)
-    }
-};
-
-// Appliquez les niveaux de journalisation personnalisés à la configuration de Winston
-config.addColors(customLevels.colors);
-
-// Créer un deuxième logger spécifiquement pour les logs réseau
+// Logger pour les logs réseau
 const networkLogger = createLogger({
-    levels: customLevels.levels,
+    levels: config.npm.levels,
     transports: [
-        new transports.File({
-            filename: 'logs/network.log',
-            format: fileNetworkFormat,
-            level: 'network' // Niveau 'network' pour ce transport uniquement
-        })
+        new transports.File({ filename: 'logs/network.log', level: 'network' }),
     ]
 });
 
-// Créer le logger principal pour les autres logs
+// Logger principal pour les logs d'information, d'avertissement et de base de données
 const mainLogger = createLogger({
-    levels: customLevels.levels,
+    levels: config.npm.levels,
     transports: [
         new transports.Console({
-            format: consoleFormat
+            format: consoleFormat,
         }),
         new transports.File({
             filename: 'logs/combined.log',
+            level: 'info',
             format: fileFormat
         }),
-        new transports.File({
-            filename: 'logs/error.log',
-            format: fileFormat,
-            level: 'error'
-        })
     ]
 });
 
-// Définir les méthodes pour les logs réseau
-const logger = {
-    info: (message: string) => mainLogger.info(message),
-    error: (message: string) => mainLogger.error(message),
-    warn: (message: string) => mainLogger.warn(message),
-    db:(message: string) => mainLogger.db(message),
-    // Définir d'autres méthodes si nécessaire...
-    network: (client: string, ip: string, token: string, requestURL: string, success: boolean, statusCode: number, data: any) => {
-        const logInfo = `CLIENT: ${client} | IP: ${ip} | Token: ${token} | RequestURL: ${requestURL} | Success: ${success ? '✅' : '📛'} | StatusCode: ${statusCode} | Data: ${JSON.stringify(data)}`;
-        networkLogger.log({ level: 'network', message: logInfo });
-    }
-};
+// Logger spécifique pour les erreurs
+const errorLogger = createLogger({
+    levels: config.npm.levels,
+    transports: [
+        new transports.Console({
+            format: consoleFormat,
+        }),
+        new transports.File({
+            filename: 'logs/error.log',
+            level: 'error',
+            format: format.combine(
+                format.timestamp({ format: "DD-MM-YYYY | HH:mm:ss" }),
+                format.printf(info => `${info.timestamp} |::| ${info.level} |::| ${info.message} | Error ID: ${uuidv4()}`) // Ajout d'un ID d'erreur unique
+            )
+        }),
+    ]
+});
 
-export { logger };
+// Exposition des loggers
+export { mainLogger, errorLogger, networkLogger };

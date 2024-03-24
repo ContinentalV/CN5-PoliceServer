@@ -4,9 +4,10 @@ import fs from 'fs';
 import util from 'util';
 import path from "path"
 import {logDb, logError} from "../utils/functions";
+import Table from 'cli-table3';
 // @ts-ignore
 import config from '../../config/config.json';
-import {logger} from "../syslog/logger";
+
 import chalk from "chalk";
 
 
@@ -28,8 +29,42 @@ const readFile = util.promisify(fs.readFile);
 //##########################################
 const environment = process.env.CUSTOM_ENV || 'development';
 const envConfig = config[environment];
-logger.db(`\n${chalk.bgHex("#02a78e").black.bold("Database Name")}${chalk.bgBlack(envConfig.database)}${chalk.whiteBright('||')}${chalk.bgHex("#02a78e").black.bold("Logged As:")}${chalk.bgBlack(envConfig.username)}${chalk.whiteBright('||')}${chalk.bgHex("#02a78e").black.bold("Host:")}${chalk.bgBlack(envConfig.host)}${chalk.whiteBright('||')}${chalk.bgHex("#02a78e").black.bold("Dialect")}${chalk.bgBlack(envConfig.dialect)}`)
-logger.db(`Connection succefull: ✅ ✅ ✅}`)
+const table = new Table({
+    head: [
+        chalk.hex('#02a78e').bold('Database Name'),
+        chalk.hex('#02a78e').bold('Logged As'),
+        chalk.hex('#02a78e').bold('Host'),
+        chalk.hex('#02a78e').bold('Dialect')
+    ],
+    colWidths: [20, 20, 20, 20], // Ajustez selon votre besoin
+    style: {
+        head: [],  // Désactive le formatage par défaut du header
+        border: [], // Désactive le formatage par défaut du bord
+    },
+    chars: {
+        'top': '═', 'top-mid': '╤', 'top-left': '╔', 'top-right': '╗',
+        'bottom': '═', 'bottom-mid': '╧', 'bottom-left': '╚', 'bottom-right': '╝',
+        'left': '║', 'mid': '─', 'mid-mid': '┼',
+        'right': '║', 'middle': '│', 'left-mid': '╟', 'right-mid': '╢'
+    }
+});
+
+
+
+
+// Ajout des informations de connexion à la table
+table.push(
+    [
+        chalk.bgBlack(envConfig.database),
+        chalk.bgBlack(envConfig.username),
+        chalk.bgBlack(envConfig.host),
+        chalk.bgBlack(envConfig.dialect)
+    ]
+);
+
+// Affichage de la table
+console.log(table.toString());
+//logger.db(`Connection succefull: ✅ ✅ ✅}`)
 const pool = createPool({
     host: envConfig.host,
     user: envConfig.username,
@@ -137,50 +172,6 @@ export const testConnection2 = async () => {
     }
 };
 
-//##########################################
-export const checkTables = async () => {
-    try {
-        const connection = await pool.getConnection();
-        const [rows] = await connection.query("SHOW TABLES");
-        const tables = (rows as RowDataPacket[]).map(row => Object.values(row)[0]);
-        const [rows33] = await connection.query("SHOW GRANTS FOR 'policeneo'@'127.0.0.1'");
-        console.log(rows33)
 
-
-        logDb(`Il y a ${tables.length} table(s) dans la base de données.`);
-        logDb(`Table:: \n${tables.map((table) => `Vérification table:: ${table}`).join("\n")} table(s) dans la base de données.`);
-        logDb("Vérification déroulé avec succès ✅✅");
-
-    } catch (error) {
-        if (error instanceof Error) {
-            logError("Erreur lors de la vérification des tables: " + error.message);
-        } else {
-            logError("Erreur lors de la vérification des tables, et l'erreur n'est pas de type Error");
-        }
-        process.exit(1); // Arrête le serveur si la vérification échoue
-    }
-};
-//##########################################
-
-export const executeProcedureSqlFile = async (filePath: string) => {
-    const connection = await pool.getConnection()
-    try {
-        const absolutePath = path.join(__dirname, filePath);
-        const sqlString = await readFile(absolutePath, 'utf8')
-
-        await connection.beginTransaction()
-        await connection.query(sqlString)
-        await connection.commit()
-        logDb("Procedure sql execute !")
-
-
-    } catch (e) {
-        console.error(e)
-        process.exit(1)
-    } finally {
-        connection.release()
-    }
-
-}
 
 

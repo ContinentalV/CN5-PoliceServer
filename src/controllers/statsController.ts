@@ -2,44 +2,43 @@ import statsService from "../services/statsService";
 import express, {NextFunction, Request, Response} from "express";
 import {CriticalError, LightError, NotFoundError} from "../utils/CustomError";
 import {fetchSafe, headers} from "../utils/utilFn";
+import {errorLogger, mainLogger} from "../syslog/logger";
+import {v4 as uuidv4} from "uuid";
 
 
 const router = express.Router();
 router.get('/stats/matricules', async (req: Request, res: Response, next: NextFunction) => {
     try {
-       
         const matricules = await statsService.getAllMatricule();
         if (matricules) {
             res.json(matricules);
         } else {
-            throw new NotFoundError("Impossible de recuperer les matricules de la base de donnée.")
+            mainLogger.warn('|🟠| Impossible de recuperer les matricules de la base de donnée.')
+             res.status(404).json({message: "|🟠| Impossible de recuperer les matricules de la base de donnée."})
         }
-    } catch (error) {
-        if (error instanceof Error) {
-            next(error instanceof Error ? error : new CriticalError("Erreur interne. Contactez le dev."));
-        }
+    } catch (error:any) {
+        const errorId = uuidv4();
+        errorLogger.error({ message: error.message,  errorId });
+        res.status(500).json({ message: "|❌| Récuperation des matricules impossible.", errorId });
     }
 });
 
 
 router.get("/stats/service", async (req: Request, res: Response, next: NextFunction) => {
     const codeMetier: string = typeof req.query.codeMetier === 'string' ? req.query.codeMetier : 'NOCODE';
-
     try {
         const serviceInfo = await statsService.getAllDataProfile(codeMetier)
         if (!serviceInfo) {
-            throw new NotFoundError("Impossible de recuperer les donnée de la base de donnée.")
+            mainLogger.warn("|❌| Impossible de recuperer les profils de la base de donnée.")
+            res.status(404).json({message: "|❌| Impossible de recuperer les profils de la base de donnée."})
         } else {
             res.status(200).json(serviceInfo)
-
         }
-
-    } catch (error) {
-        if (error instanceof Error) {
-            next(error instanceof Error ? error : new CriticalError("Erreur interne"));
-        }
+    } catch (error:any) {
+        const errorId = uuidv4();
+        errorLogger.error({ message: error.message,codeMetier, errorId });
+        res.status(500).json({ message: "|❌| Erreur interne du serveur", errorId });
     }
-
 })
 
 
@@ -49,14 +48,16 @@ router.get('/stats/json/conti', async (req: Request, res: Response, next: NextFu
             headers
         });
         if (response.success && response.data) {
+           // mainLogger.info("|✅| Data json continentalv bien récupérée.")
             res.json(response.data);
         } else {
-            throw new NotFoundError("Impossible de récupérer les données de l'API externe.");
+            mainLogger.warn("|❌| Impossible de récupérer les données du json-conti\"")
+           res.status(500).json({message:"|❌| Impossible de récupérer les données du json-conti"});
         }
-    } catch (error) {
-        if (error instanceof Error) {
-            next(error instanceof Error ? error : new CriticalError("Erreur interne"));
-        }
+    } catch (error:any) {
+        const errorId = uuidv4();
+        errorLogger.error({ message: error.message, errorId });
+        res.status(500).json({ message: "|❌| Erreur interne du serveur", errorId });
     }
 });
 
@@ -66,14 +67,15 @@ router.get("/stats/base-salarial/:code", async (req: Request, res: Response, nex
         const arrayGradesSalaire = await statsService.getBaseSalarialGrade(code)
         // @ts-ignore
         if (arrayGradesSalaire.length <= 0) {
-            throw new LightError("Impossible de récupérer les données de base salarial");
+            mainLogger.warn("|❌| Impossible de récupérer les données de base salarial")
+           res.status(404).json({message: "|❌| Impossible de récupérer les données de base salarial"});
         }
+        mainLogger.info("|✅| Data base salarial récupérer")
         res.status(200).json({data: arrayGradesSalaire})
-
-    } catch (e) {
-        if (e instanceof Error) {
-            next(e instanceof Error ? e : new CriticalError("Erreur interne"));
-        }
+    } catch (error:any) {
+        const errorId = uuidv4();
+        errorLogger.error({ message: error.message, errorId });
+        res.status(500).json({ message: "|❌| Erreur interne du serveur", errorId });
     }
 
 })
@@ -83,16 +85,16 @@ router.get("/stats/grade/all/:serveurId", async (req: Request, res: Response, ne
     try {
         const arrayAllGrades = await statsService.getAllGrade(serverId)
         if (arrayAllGrades) {
+            mainLogger.info("|✅| Grade récuperer avec succès")
             res.status(200).json({grades: arrayAllGrades})
         } else {
-            throw new LightError("Impossible de recuperer les grades. Erreur interne")
+            mainLogger.warn("|❌| Impossible de recuperer les grades.")
+           res.status(404).json({message:"|❌| Impossible de recuperer les grades."})
         }
-
-
-    } catch (e) {
-        if (e instanceof Error) {
-            next(e instanceof Error ? e : new CriticalError("Erreur interne"));
-        }
+    } catch (error:any) {
+        const errorId = uuidv4();
+        errorLogger.error({ message: error.message, errorId });
+        res.status(500).json({ message: "|❌| Erreur interne du serveur", errorId });
     }
 
 })
