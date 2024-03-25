@@ -41,11 +41,9 @@ export const monitorPerformance = async (): Promise<void> => {
             throw new Error('dbResult is undefined');
         }
         const db2 = await testConnection()
-        //logDb(db2.connection.config.host + ":" + db2.connection.config.port + " as " + [db2.connection.config.user])
         const dbProcesses: RowDataPacket[] = dbResult.process.filter((p: RowDataPacket) => p.Command !== 'Daemon' && p.Command !== "Sleep" && p.Time !== null);
         const activeQueries: number = dbProcesses.length;
         const longestQueryTime: number = Math.max(...dbProcesses.map(p => Number(p.Time)));
-        //  console.log(...dbProcesses.map(p => p.Time + " " + p.Command + " " + p.Info))
         const monitoringData = {
             memory: memoryUsage,
             cpu: cpuLoad.join("\n"),
@@ -74,7 +72,6 @@ export const monitorPerformance = async (): Promise<void> => {
         const goodRequestBar = createProgressBar(percentageRequestQuality.goodPercentage);
         const averageRequestBar = createProgressBar(percentageRequestQuality.averagePercentage);
         const tooLongRequestBar = createProgressBar(percentageRequestQuality.tooLongPercentage);
-
         const goodHits = formatRequestHits(requestPerformanceData.good, "GET", "🟢");
         const averageHits = formatRequestHits(requestPerformanceData.average, "GET", "🟠");
         const tooLongHits = formatRequestHits(requestPerformanceData.tooLong, "GET", "🔴");

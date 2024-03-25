@@ -1,4 +1,6 @@
 import axios, {AxiosError} from 'axios';
+import {metrics} from "./constExport";
+import {RequestPerformanceData} from "../interface";
 
 const DISCORD_WEBHOOK_URL_API = process.env.DISCORD_WEBHOOK_URL_API
 
@@ -139,16 +141,11 @@ export function formatRequestHits(requestData: RequestData[], httpMethod: string
             `${colorStatus}|\`${httpMethod} ${path}\` - ${count}`
         )
         .join("\n");
-
     return hitsString;
 }
 
 
-interface RequestPerformanceData {
-    good: { length: number }[];
-    average: { length: number }[];
-    tooLong: { length: number }[];
-}
+
 
 export function calculateRequestPercentage(requestPerformanceData: RequestPerformanceData): {
     totalRequests: number;
@@ -165,13 +162,33 @@ export function calculateRequestPercentage(requestPerformanceData: RequestPerfor
 }
 
 
-export function createProgressBar(percentage: string, barLength = 10) {
-    if (isNaN(parseInt(percentage))) return "[░░░░░░░░░░░░]"
-    const filledBarLength = Math.round((parseInt(percentage) / 100) * barLength);
+export function createProgressBar(percentage: number, barLength = 10): string {
+    if ((percentage)) return "[░░░░░░░░░░░░]"
+    const filledBarLength = Math.round((percentage) / 100) * barLength;
     const emptyBarLength = barLength - filledBarLength;
     const filledBar = '█'.repeat(filledBarLength);
     const emptyBar = '░'.repeat(emptyBarLength);
     return `[${filledBar}${emptyBar}] | \`${percentage}%\``;
 }
 
+async function checkFiveMAvailability() {
+    try {
+        const start = process.hrtime();
+        await axios.get("https://servers-frontend.fivem.net/api/servers/single/eazypm", {
+            headers
+        });
+        const diff = process.hrtime(start);
+        const responseTime = diff[0] * 1e3 + diff[1] * 1e-6;
 
+        metrics.externalServices.fiveM.isAvailable = true;
+        metrics.externalServices.fiveM.responseTime = responseTime;
+    } catch (error) {
+        metrics.externalServices.fiveM.isAvailable = false;
+        metrics.externalServices.fiveM.responseTime = 0;
+        console.error("FiveM service is unavailable:", error);
+    }
+}
+
+
+setInterval(checkFiveMAvailability, 600000);
+  checkFiveMAvailability()
