@@ -147,23 +147,11 @@ export function formatRequestHits(requestData: RequestData[], httpMethod: string
 
 
 
-export function calculateRequestPercentage(requestPerformanceData: RequestPerformanceData): {
-    totalRequests: number;
-    goodPercentage: string;
-    averagePercentage: string;
-    tooLongPercentage: string
-} {
-    const totalRequests = requestPerformanceData.good.length + requestPerformanceData.average.length + requestPerformanceData.tooLong.length;
-    const goodPercentage: string = ((requestPerformanceData.good.length / totalRequests) * 100).toFixed(2);
-    const averagePercentage: string = ((requestPerformanceData.average.length / totalRequests) * 100).toFixed(2);
-    const tooLongPercentage: string = ((requestPerformanceData.tooLong.length / totalRequests) * 100).toFixed(2);
 
-    return {totalRequests, goodPercentage, averagePercentage, tooLongPercentage};
-}
 
 
 export function createProgressBar(percentage: number, barLength = 10): string {
-    if ((percentage)) return "[░░░░░░░░░░░░]"
+    if ((!percentage)) return "[░░░░░░░░░░░░]"
     const filledBarLength = Math.round((percentage) / 100) * barLength;
     const emptyBarLength = barLength - filledBarLength;
     const filledBar = '█'.repeat(filledBarLength);

@@ -1,3 +1,17 @@
+export interface JwtPayload {
+    userId: string;
+}
+
+export interface Configurations {
+    [env: string]: {
+        username: string;
+        password: string | null;
+        database: string;
+        host: string;
+        dialect: string;
+        // ... autres propriétés spécifiques à l'environnement
+    };
+}
 export interface Metrics {
     totalRequests: number;
     requests: {

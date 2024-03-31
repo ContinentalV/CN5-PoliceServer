@@ -42,6 +42,10 @@ app.use(requestTracker)
 app.use(express.json());
 app.use(timeout('10s'));
 app.use(cookieParser())
+app.get('/', (req: Request, res: Response) => {
+    res.json({ message: 'Bienvenue sur l\'API de la communauté de l\'Aube' });
+});
+
 app.use('/auth', authRoute)
 app.use('/discord', discordAPIRoutes);
 app.use('/members', memberRoutes);

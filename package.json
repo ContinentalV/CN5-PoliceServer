@@ -4,7 +4,7 @@
   "description": "API REST FOR DASH/BOT POLICE",
   "main": "index.js",
   "scripts": {
-    "start:dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "start": "ts-node-dev --respawn --transpile-only src/server.ts",
     "init:full-app": "node init/init-db.ts && sequelize db:migrate && npx sequelize-cli db:seed:all",
     "init:db:create": "node init/init-db.ts",
     "init:db:migrate": "sequelize db:migrate",

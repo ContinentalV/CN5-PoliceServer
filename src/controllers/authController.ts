@@ -88,7 +88,7 @@ router.get('/verify', async (req: Request, res: Response) => {
     }
 
     try {
-        const decoded = jwt.verify(token, process.env.JWT_SECRET!);
+        const decoded = jwt.verify(token, process.env.JWT_SECRET!)as JwtPayload;
         decod = decoded
         const user = await memberService.getMemberById(decoded.userId);
 
@@ -102,7 +102,7 @@ router.get('/verify', async (req: Request, res: Response) => {
     } catch (error:any) {
         const errorId = uuidv4();
         errorLogger.error({
-            message: `Erreur lors de la vérification du token pour ${decod.userId}: ${error.message}`,
+            message: `Erreur lors de la vérification du token : ${error.message}`,
             errorId
         });
         return res.status(401).json({ message: 'Authentifiez-vous. Erreur de vérification du token.', errorId });
